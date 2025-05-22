@@ -45,7 +45,7 @@ def find_by_department():
     logging.info(f"employees belongs to {department} dept are found")
     return jsonify(result)
 
-#searching employee by designation
+# Searching employee by designation
 @handle_exceptions
 @app.route("/employee/designation",methods=["POST"])
 def find_by_designation():
