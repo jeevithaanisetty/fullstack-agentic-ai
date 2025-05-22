@@ -39,7 +39,6 @@ class Employee:
                 data["projects"]
         ]
     
-    
     # finding count of projects 
     def is_on_bench(self):
         return len(self.projects) == 0 
