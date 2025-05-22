@@ -2,6 +2,7 @@ import logging
 from functools import wraps
 
 # Decorator to log employee logging
+
 def handle_exceptions(func):
     @wraps(func)
     def wrapper (*args, **kwargs):

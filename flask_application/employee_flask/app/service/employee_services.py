@@ -3,6 +3,7 @@ from flask import Flask,request,jsonify
 from app.model.employee import Employee
 import json
 
+
 app=Flask(__name__)
 
 data_file="app/data/employees_details.json"

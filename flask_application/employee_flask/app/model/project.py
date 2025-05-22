@@ -5,6 +5,7 @@ class Project:
         self.project_id = project_id 
         self.name = name
         self.status = status
+        
     
     # converting json data to dictionary
     def to_dict(self):

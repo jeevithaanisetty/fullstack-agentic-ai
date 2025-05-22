@@ -112,7 +112,6 @@ def find_by_project():
 def hello():
     return("hello viewer!")
 
-
 if __name__== "__main__":
     # Running app flask application on localserver
     app.run(debug=True)
