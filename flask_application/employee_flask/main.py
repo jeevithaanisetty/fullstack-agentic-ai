@@ -14,7 +14,7 @@ app= Flask(__name__)
 @app.route("/employees")
 def list_employees():
         result=[emp.to_dict() for emp in employees]
-        logging.info("employees loaded successfully")
+        logger.info("employees loaded successfully")
         return jsonify(result)
 
 # Searching employees who are on bench
@@ -22,7 +22,7 @@ def list_employees():
 @app.route("/bench",methods=["GET"])
 def employees_on_bench():
         result=bench_employees()
-        logging.info("employees on bench loaded successfully")
+        logger.info("employees on bench loaded successfully")
         return jsonify(result)
 
 # Searching employee by project status
@@ -32,7 +32,7 @@ def find_by_project_status():
     data=request.get_json()
     status=data.get("status")
     result=[emp.to_dict() for emp in employees if emp.has_project_with_status(status)]
-    logging.info(f"found employee with {status}")
+    logger.info(f"found employee with {status}")
     return jsonify(result)
 
 # Searching employee by department
@@ -42,7 +42,7 @@ def find_by_department():
     data=request.get_json()
     department=data.get("department")
     result=[emp.to_dict() for emp in employees if emp.department==department]
-    logging.info(f"employees belongs to {department} dept are found")
+    logger.info(f"employees belongs to {department} dept are found")
     return jsonify(result)
 
 # Searching employee by designation
@@ -52,7 +52,7 @@ def find_by_designation():
     data=request.get_json()
     designation=data.get("designation")
     result=[emp.to_dict() for emp in employees if emp.designation==designation]
-    logging.info(f"employees belongs to {designation} role are found")
+    logger.info(f"employees belongs to {designation} role are found")
     return jsonify(result)
 
 # Searching employee by location
@@ -62,7 +62,7 @@ def find_by_location():
     data=request.get_json()
     location=data.get("location")
     result=[emp.to_dict() for emp in employees if emp.location==location]
-    logging.info(f"employees belongs to {location} are found")
+    logger.info(f"employees belongs to {location} are found")
     return jsonify(result)
 
 # Searching employee having salary in between x and  y
@@ -73,7 +73,7 @@ def find_by_salary():
     min_salary=data.get("minimum_salary")
     max_salary=data.get("maximum_salary")
     result=[emp.to_dict() for emp in employees if min_salary<=emp.salary>=max_salary]
-    logging.info(f"employees having salary in between {min_salary} ,{max_salary} are found")
+    logger.info(f"employees having salary in between {min_salary} ,{max_salary} are found")
     return jsonify(result)
 
 # Searching employee having age in between x and y
@@ -84,7 +84,7 @@ def find_emp_by_age():
     min_age=data.get("minimum_age")
     max_age=data.get("maximum_age")
     result=[emp.to_dict() for emp in employees if min_age<=emp.get_age()>=max_age]
-    logging.info(f"employees with age in between {min_age} and {max_age} are found")
+    logger.info(f"employees with age in between {min_age} and {max_age} are found")
     return jsonify(result)
 
 # Searching employee having age above x
@@ -94,7 +94,7 @@ def find_emp_by_above_age():
     data=request.get_json()
     age=data.get("age")
     result=[emp.to_dict() for emp in employees if emp.get_age()>=age]
-    logging.info(f"employees having age more than {age} are found")
+    logger.info(f"employees having age more than {age} are found")
     return jsonify(result)
 
 # Searching employee by porject name
@@ -104,7 +104,7 @@ def find_by_project():
     data=request.get_json()
     name=data.get("name")
     result=[emp.to_dict() for emp in employees for p in emp.projects if p.name==name ]
-    logging.info(f"employees belongs to {name} project are found")
+    logger.info(f"employees belongs to {name} project are found")
     return jsonify(result)
 
 # A simple "/" call to know the health of flask application
