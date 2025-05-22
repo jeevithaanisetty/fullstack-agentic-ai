@@ -1,0 +1,12 @@
+2025-05-22 22:02:04 | INFO     | employees.main:26 | employees_on_bench() | [Thread-2 (process_request_thread)] | employees on bench loaded successfully
+2025-05-22 22:02:10 | INFO     | employees.main:18 | list_employees() | [Thread-3 (process_request_thread)] | employees loaded successfully
+2025-05-22 22:02:31 | INFO     | employees.main:88 | find_emp_by_age() | [Thread-4 (process_request_thread)] | employees with age in between 25 and 35 are found
+2025-05-22 22:02:36 | INFO     | employees.main:66 | find_by_location() | [Thread-5 (process_request_thread)] | employees belongs to Hyderabad are found
+2025-05-22 22:02:40 | INFO     | employees.main:77 | find_by_salary() | [Thread-6 (process_request_thread)] | employees having salary in between 30000 ,60000 are found
+2025-05-22 22:02:44 | INFO     | employees.main:56 | find_by_designation() | [Thread-7 (process_request_thread)] | employees belongs to Manager role are found
+2025-05-22 22:02:50 | INFO     | employees.main:18 | list_employees() | [Thread-8 (process_request_thread)] | employees loaded successfully
+2025-05-22 22:02:54 | INFO     | employees.main:98 | find_emp_by_above_age() | [Thread-9 (process_request_thread)] | employees having age more than 25 are found
+2025-05-22 22:02:58 | INFO     | employees.main:36 | find_by_project_status() | [Thread-10 (process_request_thread)] | found employee with active
+2025-05-22 22:03:16 | INFO     | employees.main:46 | find_by_department() | [Thread-11 (process_request_thread)] | employees belongs to IT dept are found
+2025-05-22 22:06:20 | INFO     | employees.main:108 | find_by_project() | [Thread-12 (process_request_thread)] | employees belongs to FinTrack project are found
+2025-05-22 22:08:03 | INFO     | employees.main:36 | find_by_project_status() | [Thread-13 (process_request_thread)] | found employee with completed
