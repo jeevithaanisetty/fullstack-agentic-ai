@@ -4,6 +4,7 @@ from app.service.employee_services import employees,bench_employees
 from app.model.employee import Employee
 from app.utils.logger import get_logger
 
+# Initializing logger
 logger = get_logger('employees.main')
 
 # Creating an app flask application
