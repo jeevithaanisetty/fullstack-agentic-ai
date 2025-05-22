@@ -6,7 +6,6 @@ class Project:
         self.name = name
         self.status = status
         
-    
     # converting json data to dictionary
     def to_dict(self):
         return {
