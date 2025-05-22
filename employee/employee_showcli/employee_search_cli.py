@@ -3,6 +3,7 @@ import logging
 from datetime  import datetime
 from functools import wraps
 
+# basic configuration to create logger
 logging.basicConfig (
     filename = 'employee_app.log',
     level = logging.INFO,
