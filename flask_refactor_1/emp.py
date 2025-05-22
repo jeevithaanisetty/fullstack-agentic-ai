@@ -159,7 +159,7 @@ def find_emp_by_age():
     data=request.get_json()
     min_age=data.get("minimum_age")
     max_age=data.get("maximum_age")
-    result=[emp for emp in employees if min_age<=emp.get_age()>=max_age]
+    result=[emp.to_dict() for emp in employees if min_age<=emp.get_age()>=max_age]
     return jsonify(result)
 
 @handle_exceptions

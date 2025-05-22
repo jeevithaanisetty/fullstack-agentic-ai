@@ -48,10 +48,6 @@ class Employee:
         birth_date = datetime.strptime(self.dob, "%Y-%m-%d")
         return (datetime.now() - birth_date).days // 365
 
-
-
-
-
 # ***** Helper Methods
 @handle_exceptions
 def load_employees(filepath):
