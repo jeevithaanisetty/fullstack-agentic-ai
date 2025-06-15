@@ -1,0 +1,24 @@
+2025-05-15 08:45:41,166 [WARNING]  * Debugger is active!
+2025-05-15 08:45:41,171 [INFO]  * Debugger PIN: 835-532-183
+2025-05-15 08:46:20,532 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-15 08:46:20,532 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-15 08:46:20,537 [INFO]  * Restarting with stat
+2025-05-15 08:46:20,929 [WARNING]  * Debugger is active!
+2025-05-15 08:46:20,934 [INFO]  * Debugger PIN: 835-532-183
+2025-05-15 08:47:20,285 [INFO]  * Detected change in 'C:\\trainig assignments\\test-2\\user_api.py', reloading
+2025-05-15 08:47:20,361 [INFO]  * Restarting with stat
+2025-05-15 08:47:20,826 [WARNING]  * Debugger is active!
+2025-05-15 08:47:20,832 [INFO]  * Debugger PIN: 835-532-183
+2025-05-15 08:47:35,678 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-15 08:47:35,678 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-15 08:47:35,684 [INFO]  * Restarting with stat
+2025-05-15 08:47:36,111 [WARNING]  * Debugger is active!
+2025-05-15 08:47:36,116 [INFO]  * Debugger PIN: 835-532-183
+2025-05-15 08:48:17,554 [INFO] 127.0.0.1 - - [15/May/2025 08:48:17] "[31m[1mPOST /register HTTP/1.1[0m" 415 -
+2025-05-15 08:48:57,570 [INFO] data saved successfully
+2025-05-15 08:48:57,571 [INFO] 127.0.0.1 - - [15/May/2025 08:48:57] "POST /register HTTP/1.1" 200 -
+2025-05-15 08:49:40,553 [INFO] 127.0.0.1 - - [15/May/2025 08:49:40] "GET /users HTTP/1.1" 200 -
+2025-05-15 09:03:45,762 [INFO] data saved successfully
+2025-05-15 09:03:45,763 [INFO] 127.0.0.1 - - [15/May/2025 09:03:45] "POST /register HTTP/1.1" 200 -

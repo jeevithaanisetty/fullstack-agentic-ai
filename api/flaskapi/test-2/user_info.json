@@ -1,0 +1,26 @@
+[
+    {
+        "user_id": "36akx096",
+        "first_name": "mukundh",
+        "last_name": "rajan",
+        "username": "raj4657",
+        "age": "22",
+        "password": "maa@203",
+        "email": "mukundh123@gmail.com",
+        "dob": "04/12/2003"
+    },
+    {
+        "user_id": "54za3w2",
+        "first_name": "jeevana",
+        "last_name": "priya",
+        "username": "happy@123",
+        "age": "25",
+        "password": "jp123@xyz",
+        "email": "asrithasri@gmail.com",
+        "dob": {
+            "date": "25",
+            "month": "08",
+            "year": "2001"
+        }
+    }
+]
