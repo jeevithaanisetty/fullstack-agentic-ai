@@ -1,0 +1,145 @@
+2025-06-14 19:28:50,873 [INFO]   Executing: get_news_articles 
+2025-06-14 19:28:50,873 [INFO]   getting news articles from web....wait 
+2025-06-14 19:28:51,520 [INFO]   
+Fetched 3 articles
+ 
+2025-06-14 19:28:51,520 [INFO]   Executing: process_news_articles 
+2025-06-14 19:28:51,521 [INFO]   Executing: generate_headlines 
+2025-06-14 19:28:52,739 [INFO]   headlines generated for prompt 
+2025-06-14 19:28:52,743 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:52,881 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:52,881 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:52,935 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:52,936 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:52,936 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:52,982 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:52,982 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:52,982 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:53,028 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:53,028 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:53,028 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:53,074 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:53,075 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:53,075 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:53,131 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:53,132 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:53,132 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:28:53,132 [INFO]   Executing: generate_headlines 
+2025-06-14 19:28:54,871 [INFO]   headlines generated for prompt 
+2025-06-14 19:28:54,879 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,014 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,014 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,071 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,072 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:55,072 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,128 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,128 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:55,128 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,185 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,185 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:55,185 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,241 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,241 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:55,241 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:55,298 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:55,299 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:55,299 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:28:55,299 [INFO]   Executing: generate_headlines 
+2025-06-14 19:28:57,107 [INFO]   headlines generated for prompt 
+2025-06-14 19:28:57,114 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,258 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,258 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,303 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,303 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:57,304 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,341 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,341 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:57,341 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,390 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,390 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:57,390 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,441 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,441 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:57,441 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:28:57,484 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:28:57,484 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:28:57,484 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:28:57,484 [INFO]   Executing: get_updated_news_api 
+2025-06-14 19:28:57,484 [INFO]   news_api is updated with the updated Articles 
+2025-06-14 19:28:57,485 [INFO]   news_api json is updated and saved successfully 
+2025-06-14 19:34:45,863 [INFO]   Executing: get_news_articles 
+2025-06-14 19:34:45,863 [INFO]   getting news articles from web....wait 
+2025-06-14 19:34:46,470 [INFO]   
+Fetched 3 articles
+ 
+2025-06-14 19:34:46,471 [INFO]   Executing: process_news_articles 
+2025-06-14 19:34:46,471 [INFO]   Executing: generate_headlines 
+2025-06-14 19:44:29,086 [INFO]   Executing: get_news_articles 
+2025-06-14 19:44:29,086 [INFO]   getting news articles from web....wait 
+2025-06-14 19:44:29,489 [INFO]   
+Fetched 3 articles
+ 
+2025-06-14 19:44:29,489 [INFO]   Executing: process_news_articles 
+2025-06-14 19:44:29,490 [INFO]   Executing: generate_headlines 
+2025-06-14 19:44:30,838 [INFO]   headlines generated for prompt 
+2025-06-14 19:44:30,842 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:30,980 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:30,980 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:31,015 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:31,015 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:31,016 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:31,051 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:31,051 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:31,051 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:31,106 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:31,106 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:31,106 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:31,155 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:31,155 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:31,155 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:31,193 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:31,194 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:31,194 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:44:31,194 [INFO]   Executing: generate_headlines 
+2025-06-14 19:44:32,990 [INFO]   headlines generated for prompt 
+2025-06-14 19:44:32,998 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,109 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,110 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,148 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,148 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:33,149 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,187 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,187 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:33,187 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,225 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,225 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:33,225 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,264 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,265 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:33,265 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:33,312 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:33,312 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:33,313 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:44:33,313 [INFO]   Executing: generate_headlines 
+2025-06-14 19:44:35,041 [INFO]   headlines generated for prompt 
+2025-06-14 19:44:35,048 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,152 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,152 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,190 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,190 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:35,190 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,227 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,227 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:35,227 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,265 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,265 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:35,265 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,305 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,305 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:35,305 [INFO]   Executing: get_mean_embedding 
+2025-06-14 19:44:35,356 [INFO]   mean embedding generated for prompt/headline 
+2025-06-14 19:44:35,356 [INFO]   found the cosine similarity between each headline and text 
+2025-06-14 19:44:35,356 [INFO]   top 5 headlines are appended to each article 
+2025-06-14 19:44:35,356 [INFO]   Executing: get_updated_news_api 
+2025-06-14 19:44:35,356 [INFO]   news_api is updated with the updated Articles 
+2025-06-14 19:44:35,357 [INFO]   news_api json is updated and saved successfully 

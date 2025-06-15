@@ -1,0 +1,111 @@
+{
+    "status": "ok",
+    "totalResults": 32,
+    "articles": [
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "ABC News",
+            "title": "How scientists confirmed the existence of 200-million-year-old species thought to be extinct - ABC News",
+            "description": null,
+            "url": "https://abcnews.go.com/US/scientists-confirmed-existence-200-million-year-species-thought/story?id\\\\u003d122773046",
+            "urlToImage": null,
+            "publishedAt": "2025-06-13T11:47:22Z",
+            "content": null,
+            "Headlines": [
+                {
+                    "Headline": "Scientists have confirmed that the 1,700-year-old fossil",
+                    "Score": "0.9984"
+                },
+                {
+                    "Headline": "\"Why not just make up the facts?\". \u00a0\nThe 'Foss",
+                    "Score": "0.9969"
+                },
+                {
+                    "Headline": "The Discovery of a Species Not Found by NASA.",
+                    "Score": "0.9956"
+                },
+                {
+                    "Headline": "\"Uncertainty over the future of life on Earth has been confirmed on",
+                    "Score": "0.9929"
+                },
+                {
+                    "Headline": "Scientists confirm \"biblical proof\" that the existence of a",
+                    "Score": "0.9871"
+                }
+            ]
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Betsy Klein, Kylie Atwood, Alejandra Jaramillo, Rob Picheta, Dana Bash",
+            "title": "Trump warns Iran to agree to a deal \u2018before there is nothing left\u2019 - CNN",
+            "description": "President Donald Trump told CNN that the United States \u201cof course\u201d supports Israel and called the strikes on Iran overnight \u201ca very successful attack\u201d in a brief phone call.",
+            "url": "https://www.cnn.com/2025/06/12/politics/trump-israel-iran-strike",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2219812833.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2025-06-13T11:47:00Z",
+            "content": "Editors Note: Israel launched strikes against Iran early Friday, targeting the nuclear program and its long-range missile capabilities, an Israeli military official said. Follow live updates here.\r\nP\u2026 [+5300 chars]",
+            "Headlines": [
+                {
+                    "Headline": "Iran strikes target for first time since September 1st, says @CNN.",
+                    "Score": "0.9991"
+                },
+                {
+                    "Headline": "Iran strikes to strike U.S. | By Ben Cohen on November 27",
+                    "Score": "0.9968"
+                },
+                {
+                    "Headline": "\"What Happened with Iran's Nuclear Deal.\"\nTrump: \"Did",
+                    "Score": "0.9964"
+                },
+                {
+                    "Headline": "It's been two days since the Iran nuclear deal was signed. The Trump",
+                    "Score": "0.9963"
+                },
+                {
+                    "Headline": "Trump: the U.S. is opposed to the deal that",
+                    "Score": "0.9931"
+                }
+            ]
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NPR"
+            },
+            "author": "Jane Arraf",
+            "title": "Israel attacks Iran's nuclear and missile sites, prompting retaliation from Tehran - NPR",
+            "description": "The Israeli strikes killed top Iranian military leaders and nuclear scientists ahead of planned weekend negotiations aimed at addressing international concerns over Iran's uranium enrichment program.",
+            "url": "https://www.npr.org/2025/06/13/nx-s1-5432437/israel-attacks-iran-retaliation-nuclear",
+            "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8640x4860+0+450/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa7%2Ffd%2Fab35f8724cdb95d48bd9ff5b52a8%2Fap25164082336163.jpg",
+            "publishedAt": "2025-06-13T11:40:39Z",
+            "content": "AMMAN, Jordan and TEL AVIV, Israel Israel launched air strikes into Iran early Friday, targeting the country's nuclear facilities and killing top military leaders, officials and nuclear scientists. T\u2026 [+4657 chars]",
+            "Headlines": [
+                {
+                    "Headline": "Israel's attacks on Iran's nuclear and missile sites. #IranDeal...",
+                    "Score": "0.9992"
+                },
+                {
+                    "Headline": "Israel attacks Iran's nuclear and missile sites, prompting retaliation from Tehran - NPR",
+                    "Score": "0.9989"
+                },
+                {
+                    "Headline": "Iran attacks Iran's nuclear and missile sites, prompting retaliation from Iran - NPR",
+                    "Score": "0.9987"
+                },
+                {
+                    "Headline": "Iran strikes Iran's nuclear and missile sites, prompting retaliation from Tehran",
+                    "Score": "0.9985"
+                },
+                {
+                    "Headline": "\"Israeli air strikes kill top Iranian military leaders, scientists\" from http://",
+                    "Score": "0.9964"
+                }
+            ]
+        }
+    ]
+}
