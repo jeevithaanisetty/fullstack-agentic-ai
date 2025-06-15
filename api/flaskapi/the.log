@@ -1,0 +1,84 @@
+2025-05-08 16:02:24,229 [WARNING]  * Debugger is active!
+2025-05-08 16:02:24,234 [INFO]  * Debugger PIN: 835-532-183
+2025-05-08 16:03:21,254 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 16:03:21,254 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-08 16:03:21,259 [INFO]  * Restarting with stat
+2025-05-08 16:03:21,633 [WARNING]  * Debugger is active!
+2025-05-08 16:03:21,637 [INFO]  * Debugger PIN: 835-532-183
+2025-05-08 16:03:31,832 [INFO] 127.0.0.1 - - [08/May/2025 16:03:31] "GET /user/rani@gmail.com HTTP/1.1" 200 -
+2025-05-08 18:02:32,802 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 18:02:32,803 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-08 18:02:32,809 [INFO]  * Restarting with stat
+2025-05-08 18:02:33,233 [WARNING]  * Debugger is active!
+2025-05-08 18:02:33,239 [INFO]  * Debugger PIN: 835-532-183
+2025-05-08 18:03:02,406 [INFO]  * Detected change in 'C:\\AI-practice\\api\\the.py', reloading
+2025-05-08 18:03:02,488 [INFO]  * Restarting with stat
+2025-05-08 18:03:02,950 [WARNING]  * Debugger is active!
+2025-05-08 18:03:02,956 [INFO]  * Debugger PIN: 835-532-183
+2025-05-08 18:03:11,883 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 18:03:11,883 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-08 18:03:11,888 [INFO]  * Restarting with stat
+2025-05-08 18:03:12,333 [WARNING]  * Debugger is active!
+2025-05-08 18:03:12,341 [INFO]  * Debugger PIN: 835-532-183
+2025-05-08 18:03:29,499 [INFO] 127.0.0.1 - - [08/May/2025 18:03:29] "GET /user/rani@gmail.com HTTP/1.1" 200 -
+2025-05-08 18:04:27,254 [INFO] email matched
+2025-05-08 18:04:27,254 [INFO] 127.0.0.1 - - [08/May/2025 18:04:27] "POST /user/change_password HTTP/1.1" 200 -
+2025-05-08 18:05:35,086 [INFO] email matched
+2025-05-08 18:05:35,087 [INFO] password changed
+2025-05-08 18:05:35,088 [INFO] 127.0.0.1 - - [08/May/2025 18:05:35] "POST /user/change_password HTTP/1.1" 200 -
+2025-05-08 18:06:07,615 [INFO] 127.0.0.1 - - [08/May/2025 18:06:07] "[31m[1mPOST /user/login HTTP/1.1[0m" 422 -
+2025-05-08 18:06:37,245 [INFO] login with rani@gmail.com is successful
+2025-05-08 18:06:37,245 [INFO] 127.0.0.1 - - [08/May/2025 18:06:37] "POST /user/login HTTP/1.1" 200 -
+2025-05-09 08:31:32,037 [INFO]   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 
+2025-05-09 08:31:32,038 [INFO]   [33mPress CTRL+C to quit[0m 
+2025-05-09 08:31:32,048 [INFO]    * Restarting with stat 
+2025-05-09 08:31:32,497 [WARNING]    * Debugger is active! 
+2025-05-09 08:31:32,506 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:33:41,631 [INFO]   login with rani@gmail.com is successful 
+2025-05-09 08:33:41,631 [INFO]   127.0.0.1 - - [09/May/2025 08:33:41] "POST /user/login HTTP/1.1" 200 - 
+2025-05-09 08:36:43,654 [INFO]    * Detected change in 'C:\\AI-practice\\api\\the.py', reloading 
+2025-05-09 08:36:43,747 [INFO]    * Restarting with stat 
+2025-05-09 08:36:44,212 [WARNING]    * Debugger is active! 
+2025-05-09 08:36:44,221 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:36:50,938 [INFO]   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 
+2025-05-09 08:36:50,938 [INFO]   [33mPress CTRL+C to quit[0m 
+2025-05-09 08:36:50,942 [INFO]    * Restarting with stat 
+2025-05-09 08:36:51,371 [WARNING]    * Debugger is active! 
+2025-05-09 08:36:51,376 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:37:28,550 [INFO]   127.0.0.1 - - [09/May/2025 08:37:28] "[35m[1mGET /user/rani@gmail.com HTTP/1.1[0m" 500 - 
+2025-05-09 08:38:22,015 [INFO]    * Detected change in 'C:\\AI-practice\\api\\model\\user.py', reloading 
+2025-05-09 08:38:22,086 [INFO]    * Restarting with stat 
+2025-05-09 08:38:22,589 [WARNING]    * Debugger is active! 
+2025-05-09 08:38:22,595 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:38:29,584 [INFO]   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 
+2025-05-09 08:38:29,584 [INFO]   [33mPress CTRL+C to quit[0m 
+2025-05-09 08:38:29,589 [INFO]    * Restarting with stat 
+2025-05-09 08:38:29,979 [WARNING]    * Debugger is active! 
+2025-05-09 08:38:29,984 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:38:38,156 [INFO]   127.0.0.1 - - [09/May/2025 08:38:38] "[35m[1mGET /user/rani@gmail.com HTTP/1.1[0m" 500 - 
+2025-05-09 08:40:21,739 [INFO]    * Detected change in 'C:\\AI-practice\\api\\the.py', reloading 
+2025-05-09 08:40:21,816 [INFO]    * Restarting with stat 
+2025-05-09 08:40:22,238 [WARNING]    * Debugger is active! 
+2025-05-09 08:40:22,242 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:40:24,275 [INFO]    * Detected change in 'C:\\AI-practice\\api\\the.py', reloading 
+2025-05-09 08:40:24,338 [INFO]    * Restarting with stat 
+2025-05-09 08:40:24,787 [WARNING]    * Debugger is active! 
+2025-05-09 08:40:24,793 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:40:29,670 [INFO]   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 
+2025-05-09 08:40:29,670 [INFO]   [33mPress CTRL+C to quit[0m 
+2025-05-09 08:40:29,675 [INFO]    * Restarting with stat 
+2025-05-09 08:40:30,077 [WARNING]    * Debugger is active! 
+2025-05-09 08:40:30,084 [INFO]    * Debugger PIN: 835-532-183 
+2025-05-09 08:40:41,447 [INFO]   127.0.0.1 - - [09/May/2025 08:40:41] "GET /user/rani@gmail.com HTTP/1.1" 200 - 
+2025-05-09 08:40:52,622 [INFO]   127.0.0.1 - - [09/May/2025 08:40:52] "GET /user/ranii@gmail.com HTTP/1.1" 200 - 
+2025-05-09 08:41:41,598 [INFO]    * Detected change in 'C:\\AI-practice\\api\\model\\user.py', reloading 
+2025-05-09 08:41:41,692 [INFO]    * Restarting with stat 
+2025-05-09 08:41:42,199 [WARNING]    * Debugger is active! 
+2025-05-09 08:41:42,206 [INFO]    * Debugger PIN: 835-532-183 
