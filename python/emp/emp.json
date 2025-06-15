@@ -1,0 +1,36 @@
+[
+  {
+     "emp_id":"12dwe3",
+     "name":"ram",
+     "department":"tech",
+     "projects":{
+                 "project_name":"backend Revamp",
+                "status":"active"
+     }
+     
+     
+
+ },
+
+{
+    "emp_id":"ft45d3",
+     "name":"gopal",
+     "department":"it",
+     "projects":{
+                 "project_name":"frontend Revamp",
+                "status":"active"
+     }
+    
+},
+{
+    
+    "emp_id":"bbu754",
+     "name":"sudeep",
+     "department":"tech",
+     "projects":{
+                 "project_name":"frontend Revamp",
+                "status":"completed"
+     }
+}
+
+]
