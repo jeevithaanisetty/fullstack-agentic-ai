@@ -10,3 +10,10 @@
 2025-05-22 22:03:16 | INFO     | employees.main:46 | find_by_department() | [Thread-11 (process_request_thread)] | employees belongs to IT dept are found
 2025-05-22 22:06:20 | INFO     | employees.main:108 | find_by_project() | [Thread-12 (process_request_thread)] | employees belongs to FinTrack project are found
 2025-05-22 22:08:03 | INFO     | employees.main:36 | find_by_project_status() | [Thread-13 (process_request_thread)] | found employee with completed
+2025-05-25 14:19:29 | INFO     | employees.main:97 | find_by_salary() | [Thread-2 (process_request_thread)] | employees having salary in between 30000 ,60000 are found
+2025-05-25 14:20:33 | INFO     | employees.main:97 | find_by_salary() | [Thread-5 (process_request_thread)] | employees having salary in between 30000 ,60000 are found
+2025-05-25 14:34:15 | INFO     | employees.main:68 | find_by_designation() | [Thread-4 (process_request_thread)] | employees belongs to Manager role are found
+2025-05-25 14:40:48 | INFO     | employees.main:68 | find_by_designation() | [Thread-5 (process_request_thread)] | employees belongs to Manager role are found
+2025-05-25 14:41:33 | INFO     | employees.main:68 | find_by_designation() | [Thread-6 (process_request_thread)] | employees belongs to Manager role are found
+2025-05-25 14:41:58 | INFO     | employees.main:68 | find_by_designation() | [Thread-7 (process_request_thread)] | employees belongs to Manager role are found
+2025-05-25 14:44:06 | INFO     | employees.main:54 | find_by_department() | [Thread-8 (process_request_thread)] | employees belongs to IT dept are found
