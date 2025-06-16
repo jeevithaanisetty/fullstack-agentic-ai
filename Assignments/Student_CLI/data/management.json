@@ -1,0 +1,47 @@
+[
+    {
+        "department": "ECE",
+        "no_of_seats": 30,
+        "available_seats": 3,
+        "fee": {
+            "management": 100000,
+            "counselling": 60000
+        }
+    },
+    {
+        "department": "CSE",
+        "no_of_seats": 30,
+        "available_seats": 2,
+        "fee": {
+            "management": 150000,
+            "counselling": 110000
+        }
+    },
+    {
+        "department": "EEE",
+        "no_of_seats": 20,
+        "available_seats": 9,
+        "fee": {
+            "management": 70000,
+            "counselling": 30000
+        }
+    },
+    {
+        "department": "CIVIL",
+        "no_of_seats": 20,
+        "available_seats": 12,
+        "fee": {
+            "management": 60000,
+            "counselling": 20000
+        }
+    },
+    {
+        "department": "MECH",
+        "no_of_seats": 20,
+        "available_seats": 15,
+        "fee": {
+            "management": 60000,
+            "counselling": 20000
+        }
+    }
+]
