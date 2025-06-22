@@ -55,14 +55,14 @@ def get_all_employees():
     for emp in employees:
         print(emp)
 
-def del_all_employees():  # delete table--->drop
+def del_all_employees():  #delete table
     cursor.execute("drop table Employees")
     conn.commit()
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")# to show table after clear
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")# to show tables list
     tables = cursor.fetchall()
     for table in tables:
         print(table[0])
-    print("All Employees deleted successfully")
+    print("\nAll Employees deleted successfully")
 
 def add_employees():
     name=input("enter name: ")
@@ -89,6 +89,11 @@ def get_employee_by_emp_id():
     employee=cursor.fetchall()
     print(f"--------------------------------------------------\n{employee}\n------------------------------------------------------")
 
+def get_employees_by_age():
+    cursor.execute("select * from Employees where age>=25")
+    results=cursor.fetchall()
+    for result in results:
+        print(result)
 
 def menu():
     while True:
@@ -97,8 +102,9 @@ def menu():
         print("2.Add Employees ")
         print("3.Delete Employees")
         print("4.Search employee by employee id : ")
-        print("5.delete all employees")
-        print("6.Exit")
+        print("5.Delete all employees")
+        print("6.Get employees above age")
+        print("7.Exit")
         choice=int(input("enter your choice from above 1-4: "))
 
         if choice==1:
@@ -110,11 +116,13 @@ def menu():
         elif choice==4:
             get_employee_by_emp_id()
         elif choice==5:
-            del_table()
+            del_all_employees()
         elif choice==6:
+            get_employees_by_age()
+        elif choice==7:
             print("Exiting the employee cli application......")
             break
         else:
-            print("invalid option select from 1-5 only....")
+            print("invalid option select from 1-7 only....")
 if __name__=="__main__":
     menu()
