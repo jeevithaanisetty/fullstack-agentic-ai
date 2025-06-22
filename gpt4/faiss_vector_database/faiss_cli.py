@@ -3,11 +3,12 @@ import faiss
 import pickle
 from openai import OpenAI
 import numpy as np
+import json
 
 OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 FAISS_DB="text_index.faiss"
 LABEL_MAP_FILE="text_pickle.pk1"
-VECTOR_DIM=1536
+VECTOR_DIM=1536  
 
 client=OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -66,7 +67,26 @@ def compare_labels():
 
     similarity=(np.dot(v1,v2)/(np.linalg.norm(v1) * np.linalg.norm(v2)))
     print(f"similarity for {first_label} and {second_label} is: {similarity}")
-        
+
+def get_vectors_from_labels():
+    Label=input("enter label to get vector: ")
+    for idx,label in label_map.items():
+        if Label==label:
+            vector=index.reconstruct(idx)
+            print(f"vector for {Label} label is : {vector}")
+    print("label not found....")
+    
+def get_text_from_labels():
+    Label=input("enter label to get corresponding text: ")
+    pass
+
+def export_to_json(): #json is a dict of list 
+    result=[  {"index":{idx},"label":{label}}   for idx,label in label_map.items()  ]
+    with open ("faiss.json","w")as f:
+        json.dump(result,f,indent=4)
+
+def delete_label():
+    pass
 
 def menu():
     while True:
@@ -74,7 +94,11 @@ def menu():
         print("1.Add Vector to index")
         print("2.List Labels")
         print("3.Compare Labels(Similarity)")
-        print("4.Exit")
+        print("4.Get vectors from labels")
+        print("5.get text from labels")
+        print("6.export faiss db to json")
+        print("7.delete label")
+        print("8.Exit")
         choice=int(input("enter choice: "))
 
         if choice==1:
@@ -84,6 +108,15 @@ def menu():
         elif choice==3:
             compare_labels()
         elif choice==4:
+            get_vectors_from_labels()
+        elif choice==5:
+            get_text_from_labels()
+        elif choice==6:
+            export_to_json()
+        elif choice==7:
+            delete_label()
+        elif choice==8:
+            print("Exiting faiss CLI.........")
             break
         else:
             print("Invalid Choice....")
