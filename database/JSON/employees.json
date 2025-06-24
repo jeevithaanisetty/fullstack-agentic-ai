@@ -1,0 +1,20 @@
+[
+    {
+        "name": "suma",
+        "emp_id": "A123",
+        "salary": "26000",
+        "role": "Trainee"
+    },
+    {
+        "name": "mani",
+        "emp_id": "S789",
+        "salary": "150000",
+        "role": "Manager"
+    },
+    {
+        "name": "mukundh",
+        "emp_id": "H213",
+        "salary": "75000",
+        "role": "HR"
+    }
+]
