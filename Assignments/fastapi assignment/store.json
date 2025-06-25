@@ -1,0 +1,50 @@
+[
+    {
+        "name": "d-mart",
+        "location": "lalapet guntur",
+        "products": [
+            {
+                "name": "santoor",
+                "price": 45.0,
+                "product_id": "56243",
+                "discount": 5
+            },
+            {
+                "name": "dove",
+                "price": 70.0,
+                "product_id": "1532",
+                "discount": 11
+            },
+            {
+                "name": "ponds",
+                "price": 125.0,
+                "product_id": "9876",
+                "discount": 15
+            },
+            {
+                "name": "diapers",
+                "price": 350.0,
+                "product_id": "08654",
+                "discount": 25
+            },
+            {
+                "name": "cerilac",
+                "price": 199.0,
+                "product_id": "987654",
+                "discount": 16
+            },
+            {
+                "name": "electric cooker",
+                "price": 2500.0,
+                "product_id": "645398",
+                "discount": 65
+            },
+            {
+                "name": "electric cooker",
+                "price": 2500.0,
+                "product_id": "645398",
+                "discount": 65
+            }
+        ]
+    }
+]
