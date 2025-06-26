@@ -15,7 +15,7 @@ class Store:
     def __init__(self,name,location,products):
        self.name=name
        self.location=location
-       self.products=[Products(**p) if isinstance(p, dict) else p for p in products]
+       self.products=[Products(**p) for p in products]
 
 
     def __str__(self):
@@ -36,7 +36,7 @@ class Products:
        self.discount=discount
 
     def __str__(self):
-        return (f"name:{self.name} , price:{self.price} , product_id:{self.product_id} , discount:{self.discount}")
+        return f"name:{self.name} , price:{self.price} , product_id:{self.product_id} , discount:{self.discount}"
     
     def to_dict(self):
         return vars(self)
@@ -58,8 +58,12 @@ class Store_details(BaseModel):
 class Discount(BaseModel):
     product_id:str
 
+class ProductDelete(BaseModel):
+    product_id: str
+
+
 @app.post("/edit_store")
-async def edit_store_details_and_discount(data:Store_details):
+async def edit_store_details(data:Store_details):
     stores=await load_from_json()
     stores[0].name=data.name
     stores[0].location=data.location
@@ -86,6 +90,8 @@ async def add_product_to_store(data:Item):
 @app.get("/list_all_products")
 async def list_of_products():
     store=await load_from_json()
+    if not store:
+        raise HTTPException(status_code=404, detail="No store found.")
     items=[]
     for p in store[0].products:
         items.append(p)
@@ -94,11 +100,28 @@ async def list_of_products():
 @app.post("/discounted_price")
 async def discount_value(data:Discount):
     store=await load_from_json()
+    if not store:
+        raise HTTPException(status_code=404, detail="No store found.")
     for p in store[0].products:
         if p.product_id==data.product_id:
-            discounted_price=p.discount_applied
+            discounted_price=p.discount_applied 
             return {"message":f"discount is {p.discount} and price after discount applied is {discounted_price:.4f}"}
 
+@app.post("/delete_product")
+async def delete_product(data: ProductDelete):
+    stores = await load_from_json()
+    
+    if not stores:
+        raise HTTPException(status_code=404, detail="No store found.")
+    original_count = len(stores[0].products)
+    
+    stores[0].products = [p for p in stores[0].products if p.product_id != data.product_id]
+    
+    if len(stores[0].products) == original_count:
+        raise HTTPException(status_code=404, detail="Product not found.")
+    
+    await save_to_json(stores)
+    return {"message": f"Product with ID {data.product_id} deleted successfully.."}
 
 async def load_from_json():
     if not os.path.exists(DATAFILE):

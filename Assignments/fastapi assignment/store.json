@@ -1,14 +1,8 @@
 [
     {
-        "name": "d-mart",
-        "location": "lalapet guntur",
+        "name": "orange-mart",
+        "location": "guntur vanastalipuram",
         "products": [
-            {
-                "name": "santoor",
-                "price": 45.0,
-                "product_id": "56243",
-                "discount": 5
-            },
             {
                 "name": "dove",
                 "price": 70.0,
@@ -34,16 +28,34 @@
                 "discount": 16
             },
             {
-                "name": "electric cooker",
-                "price": 2500.0,
-                "product_id": "645398",
+                "name": "melody",
+                "price": 125.0,
+                "product_id": "890067",
+                "discount": 18
+            },
+            {
+                "name": "maggie",
+                "price": 100.0,
+                "product_id": "154432",
+                "discount": 10
+            },
+            {
+                "name": "remote-car",
+                "price": 850.0,
+                "product_id": "7800123",
                 "discount": 65
             },
             {
-                "name": "electric cooker",
-                "price": 2500.0,
-                "product_id": "645398",
-                "discount": 65
+                "name": "clonic",
+                "price": 95.0,
+                "product_id": "234156",
+                "discount": 24
+            },
+            {
+                "name": "lux",
+                "price": 99.0,
+                "product_id": "67543",
+                "discount": 12
             }
         ]
     }
