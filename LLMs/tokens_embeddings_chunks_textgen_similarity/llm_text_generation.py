@@ -16,13 +16,16 @@ output_ids=head_model.generate(
                                 do_sample=True,
                                 max_length=500,
                                 temperature=0.8,
+                                num_return_sequences=3,# if u don't mention it u'll get only one as default and output_ids[1]
                                 pad_token_id=tokenizer.eos_token_id   #we have to add padding   `                                                                                                                       `
                             )                                         
-
+#print(output_ids)
 #now to generate text we need to decode these o/p ids 
-text_generated=tokenizer.decode(output_ids[0],skip_special_tokens=True)
-print(f"\n{prompt}\n")
-print(f"generated text: {text_generated}")
+text_generated1=tokenizer.decode(output_ids[0],skip_special_tokens=True)
+text_generated2=tokenizer.decode(output_ids[1],skip_special_tokens=True)
+#print(f"\n{prompt}\n")
+print(f"generated text: {text_generated1}")
+print(f"\ngenerated text: {text_generated2}")
 
 
 
