@@ -1,0 +1,24 @@
+[
+    {
+        "username": "sri",
+        "email_id": "sri@gmail.com",
+        "password": "sri123@",
+        "votes": [
+            {
+                "question": "Which country in the world has no capital city?",
+                "option": "B"
+            }
+        ]
+    },
+    {
+        "username": "Mukundh",
+        "email_id": "mukundh@gmail.com",
+        "password": "mukundh123@",
+        "votes": [
+            {
+                "question": "Which country in the world has no capital city?",
+                "option": "B"
+            }
+        ]
+    }
+]
