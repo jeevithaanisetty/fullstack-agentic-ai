@@ -1,8 +1,11 @@
-#Decorators:
-    ##classmethod:
-    + jskdakjcjkhijhfsidjghfkjvhfskhs
-    + mzkjixi
-    + sdjisdusi
-###example:
-'''a=10
-print(f"hsjdu:{a}")'''
+# Decorators
+## classmethod:
+   kjfyauighafsjgjhghjhfksdj
+jfauyrhfujhjdhgkdfjgd
+### Example
+```python
+a=10
+print(f" a is:{a}")
+
+
+
