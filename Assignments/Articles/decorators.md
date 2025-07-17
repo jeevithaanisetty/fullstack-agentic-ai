@@ -1,11 +1,13 @@
 # Decorators
-## classmethod:
-   kjfyauighafsjgjhghjhfksdj
-jfauyrhfujhjdhgkdfjgd
+
+## @classmethod
+
+- jskdakjcjkhijhfsidjghfkjvhfskhs
+- mzkjixi
+- sdjisdusi
+
 ### Example
+
 ```python
-a=10
-print(f" a is:{a}")
-
-
-
+a = 10
+print(f"hsjdu: {a}")
