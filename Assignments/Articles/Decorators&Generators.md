@@ -1,18 +1,23 @@
-# **A COMPLETE ARTICLE ABOUT DECORATORS,GENERATORS,DICTIONARY,LIST,LAMBDA AND CRUD CONSOLE AND API APPLICATION**
+# 📖 **A COMPLETE ARTICLE ABOUT DECORATORS,GENERATORS,DICTIONARY,LIST,LAMBDA - CRUD CONSOLE AND API APPLICATION**
 This article shows the complete information about the decorators,generators,dictionary,list and lambda and also a simple CRUD application using all these.And ideal for Python learners who want to connect core programming features with real-world project building. It combines theoretical depth with practical implementations, helping readers level up both their coding and software development skills
 
 ## **Overview**:
 This comprehensive article provides a practical and beginner-to-advanced level guide to essential Python programming concepts and real-world application development. The article is divided into two major parts:
+
 **Core Python Concepts**:
 + **Decorators** – Learn how to modify or enhance the behavior of functions using decorators.
 + **Generators** – Understand how to create memory-efficient iterators using the yield statement.
 + **Dictionaries & Lists** – Deep dive into Python’s most versatile built-in data structures with hands-on examples.
 + **Lambda Functions** – Master anonymous functions for writing concise, functional-style code.
-### **CRUD Application (Console & API)**:
-**Console Application** – Step-by-step building of a CRUD (Create, Read, Update, Delete) app using Python, demonstrating real-time usage of the above concepts.
-**API Application** – Extend the CRUD app with a RESTful API using frameworks like Flask or FastAPI, allowing external access and integration.
-# DECORATORS
 
+**CRUD Application (Console & API)**:
+
+**Console Application** – Step-by-step building of a CRUD (Create, Read, Update, Delete) app using Python, demonstrating real-time usage of the above concepts.
+
+**API Application** – Extend the CRUD app with a RESTful API using frameworks like Flask or FastAPI, allowing external access and integration.
+
+# 1️⃣DECORATORS
+## What is Decorator?
 A **Decorator** is a special function that takes another function and extends or alters its behavior without explicitly modifying it.
 In other words, a decorator wraps a function to add some functionality before or after the original function runs.
 
@@ -33,7 +38,7 @@ In other words, a decorator wraps a function to add some functionality before or
 + **Cleaner and More Readable Code** :
    Using @decorator syntax is cleaner and more expressive than manually wrapping functions, making the intent clear.
 
-### Example 1.1:
+### Example 1.1🖋️:
 simple program for a decorator
 
 ```python
@@ -63,14 +68,14 @@ greet("Sri")
 
 A function decorator in Python is a function that modifies or enhances another function without changing its actual code. It "wraps" a function, adding extra behavior before or after the original function runs.
 
-#### example :
+#### example 🖋️:
 `revise example 1.1`
 
-### **Class Decorators**
+### 2. **Class Decorators**
 
 It takes a class as input and returns either the same class (possibly modified) or a new class.
 
-#### Example 1.2 :
+#### Example 1.2🖋️ :
 
 ```python 
 def simple_decorator(cls):
@@ -91,11 +96,11 @@ obj = MyClass("Alice")
 obj.show_name()   # My name is Alice
 obj.say_hello()   # Hello from MyClass!
 ```
-### **Method decorators**
+### 3. **Method decorators**
 
 These decorate methods inside a class. They receive the method function and return a modified or wrapped version.
 
-#### Example 1.3 :
+#### Example 1.3 🖋️:
 
 ```python 
 def simple_decorator(method):
@@ -114,18 +119,18 @@ obj = MyClass()
 obj.greet()
 ```
 
-### **Built-in Decorators**
+### 4. **Built-in Decorators**
 There are some built-in decorators in pytthon. Those are
 
-+ **@classmethod**
-+ **@statismethod**
-+ **@property**
++ **a. @classmethod**
++ **b. @staticmethod**
++ **c. @property**
 
-### @classmethod
+### a.@classmethod
 
-In Python, @classmethod is a decorator used to define a method that is bound to the class and not the instance of the class.The method receives the class itself (cls) as the first argument instead of an instance (self).
+In Python, **@classmethod** is a decorator used to define a method that is bound to the class and not the instance of the class.The method receives the class itself (cls) as the first argument instead of an instance (self).
 
-##### Example 1.4
+##### Example 1.4🖋️:
 ```python
 class Practice:
     a = 0  # cls var
@@ -139,11 +144,11 @@ class Practice:
         print(cls(a))
 ```
 
-### **@staticmethod**
+### b.**@staticmethod**
 
 Defines a method that doesn't take self or cls as the first argument.It means it doesn't depends on the class and instances.
 
-#### Example 1.5
+#### Example 1.5🖋️:
 ```python
     class Practice:
     a = 0  # cls var
@@ -161,11 +166,11 @@ Defines a method that doesn't take self or cls as the first argument.It means it
         print(x + y)
 ```
 
-### **@property**
+### c.**@property**
 
 This behaves like a normal method but always inside the class. We can call it just like an object/attribute it means no paranthesis needed.
 
-###### Example 1.6
+###### Example 1.6🖋️:
 ```python
 class employee:
     com_name="zennial_pro"
@@ -185,8 +190,8 @@ emp.log_hours(5)
 print(emp.salary)  
 ```
 ---
-# GENERATORS
-
+# 2️⃣GENERATORS
+## What is GEnerator?
 A Python **Generator** is a special kind of function that uses the yield keyword to return an iterator, producing values one at a time and conserving memory by not storing the entire sequence at once.
 
 ## Need of Generators
@@ -201,7 +206,7 @@ A Python **Generator** is a special kind of function that uses the yield keyword
 + The function pauses at each yield, saving the state until the next call.
 + You can resume execution using next() or by iterating with a for loop.
 
-### Example 2.1
+### Example 2.1🖋️:
 using yeild and next
 
 ```python
@@ -224,7 +229,7 @@ print(next(gen))  # 8
 print(next(gen))  # 10
 print(next(gen))  # Raises StopIteration
 ```
-### Example 2.2
+### Example 2.2🖋️:
 to get all values without using next() manually use for loop
 
 ```python
@@ -240,7 +245,8 @@ print(all_values)
 
 ```
 ---
-# LAMBDA 
+# 3️⃣LAMBDA 
+## What is Lambda?
 A lambda function is a small anonymous function (i.e., a function without a name).It can take any number of arguments but only one expression.The expression is evaluated and returned automatically.
 
 ### Syntax
@@ -249,7 +255,7 @@ A lambda function is a small anonymous function (i.e., a function without a name
 arguments: input parameters (like in a normal function)
 expression: a single expression whose result is returned
 
-### Example 3.1
+### Example 3.1🖋️:
 
 ```python
 # Normal function to add 10 to a number
@@ -271,7 +277,7 @@ The map() function applies a given function to each item in an iterable (like a 
 #### Syntax
 `map(lambda x: expression, iterable)`
 
-##### Example 3.2
+##### Example 3.2🖋️:
 ```python
 no_list = [1, 2, 3, 4, 5]
 
@@ -285,7 +291,7 @@ The filter() function constructs an iterator from elements of an iterable for wh
 ##### syntax
 `filter(lambda x:expression, iterable)`
 
-##### Example 3.3
+##### Example 3.3🖋️:
 ```python
 # Filter even numbers
 evens = list(filter(lambda x: x % 2 == 0, no_list))
@@ -298,7 +304,7 @@ print(evens)  # [2, 4]
 ##### Syntax
 `sorted(iterable, key=lambda x:expression)`
 
-##### Example 3.4
+##### Example 3.4🖋️:
 ```python 
 nums = [1, 2, 3, 4, 5]
 
@@ -315,7 +321,7 @@ The reduce() function applies a function cumulatively to the items of an iterabl
 ### syntax
 `reduce(lambda x, y: expression, iterable)`
 
-##### Example 3.5
+##### Example 3.5🖋️:
 ```python
 from functools import reduce
 
@@ -326,7 +332,8 @@ print(sum_all)
 # Output: 15
 ```
 ---
-# DICTIONARY
+# 4️⃣DICTIONARY
+## What is a Dictionary?
 A Python **Dictionary** is a built-in data structure that stores data in key-value pairs. It is a collection that is: 
 + **Ordered** (as of Python 3.7):
     The order in which items are added to the dictionary is preserved. In earlier versions of Python, dictionaries were unordered.
@@ -359,7 +366,7 @@ dict_1 = {
 ## Creating a Dictionary
 You can create a dictionary using curly braces **{}** with key-value pairs separated by colons **:**.
 
-### Example 4.1
+### Example 4.1🖋️:
 ```python
 my_dict = {"name": "John", "age": 30, "country": "London"}
 print(my_dict)
@@ -373,7 +380,7 @@ It’s a compact syntax for creating dictionaries by looping over an iterable an
 ### syntax
 `{key_expression: value_expression for item in iterable}`
 
-#### Example 4.2
+#### Example 4.2🖋️:
 ```python
 squares = {x: x**2 for x in range(5)}
 print(squares)
@@ -381,7 +388,7 @@ print(squares)
 ## Accessing values in a dictionary
 You access values by using their keys inside square brackets **[]** or with the **get()** method.
 
-### Example 4.3
+### Example 4.3🖋️:
 ```python
 my_dict = {"name": "Alice", "city": "Mumbai"}
 print(my_dict["name"]) 
@@ -391,7 +398,7 @@ print(my_dict.get("name","jeevana")) #providing a default value
 ## Adding or Updating Values
 Add a new key-value pair or update an existing key by assigning a value to that key.Using **update()** also you can update a dict.
 
-### Example 4.4
+### Example 4.4🖋️:
 
 ```python
 my_dict = {"name": "Alice", "city": "Mumbai"}
@@ -414,7 +421,7 @@ print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'NY'}
 + **popitem()** removes and returns the last inserted key-value pair
 + **clear()** removes all items in the dictionary
 
-### Example 4.5
+### Example 4.5🖋️:
 ```python
 my_dict = {"name": "John", "age": 30, "city": "Mumbai"}
 
@@ -442,7 +449,7 @@ You can loop through a Dictionary using **keys()**,**values()**,**items()**.
 ### keys()
 Returns a view of all the keys in the dictionary.
 
-#### Example 4.6
+#### Example 4.6🖋️:
 ```python
 my_dict = {"name": "Alice", "age": 25, "city": "Mumbai"}
 print(my_dict.keys())  # dict_keys(['name', 'age', 'city'])
@@ -454,7 +461,7 @@ for key in my_dict:
 ### values()
 Returns a view of all the values in the dictionary.
 
-#### Example 4.7
+#### Example 4.7🖋️:
 ```python
 my_dict = {"name": "Alice", "age": 25, "city": "Mumbai"}
 print(my_dict.values())  # dict_values(['Alice', 25, 'NY'])
@@ -467,7 +474,7 @@ for value in my_dict:
 ### items()
 Returns a view of all the items(key-value pairs) in the dictionary.
 
-#### Example 4.8
+#### Example 4.8🖋️:
 ```python
 my_dict = {"name": "Alice", "age": 25, "city": "Mumbai"}
 print(my_dict.items())  # dict_items([('name', 'Alice'), ('age', 25), ('city', 'NY')])
@@ -477,7 +484,8 @@ for key ,value in my_dict.items:
     print(key,":",value)
 ```
 ---
-# LIST
+# 5️⃣LIST
+## What is a List?
 In Python, a list is a fundamental, built-in data structure used to store an ordered, mutable collection of items. Lists are highly versatile and can contain items of different data types within the same list.
 
 ## Key characteristics of Python lists:
@@ -493,7 +501,7 @@ In Python, a list is a fundamental, built-in data structure used to store an ord
 ## Creating a List 
 Lists are created by enclosing a comma-separated sequence of items within square brackets **[]**.
 
-#### Example 5.1
+#### Example 5.1🖋️:
 ```python
 # An empty list
 empty_list = []
@@ -517,7 +525,7 @@ list_1=list((1,2,"a",0.2))
 ## Acessing list items
 Use indexing to access elements (index starts at 0).
 
-#### Example 5.2
+#### Example 5.2🖋️:
 ```python
 fruits = ['apple', 'banana', 'cherry']
 print(fruits[0])  
@@ -526,7 +534,7 @@ print(fruits[2])
 ## Updating or changing list items
 Assign a new value to a specific index.
 
-#### Example 5.3
+#### Example 5.3🖋️:
 ```python
 fruits = ['apple', 'banana', 'cherry']
 fruits[1] = 'orange'
@@ -535,7 +543,7 @@ print(fruits)  # Output: ['apple', 'orange', 'cherry']
 ## Adding or Appending items to a list
 By using **append()** we can add new values to a list at the end. By using insert() we can add values at a specific index.
 
-#### Example 5.4
+#### Example 5.4🖋️:
 ```python 
 fruits = ['apple', 'banana']
 fruits.append('grape')
@@ -546,7 +554,7 @@ print(fruits)  # Output: ['apple', 'papaya','banana', 'grape']
 ## Removing or Deleting items from a list
 **remove()** is used to delete the first occurrence of the item.**.pop()** is used to remove and return the last item, or item at specific index.
 
-#### Example 5.5
+#### Example 5.5🖋️:
 ```python
 fruits = ['apple', 'banana', 'apple','cherry']
 fruits.remove('apple')
@@ -564,14 +572,14 @@ print(b)    # Output: banana
 By using **.sort()** we can sort the list in ascending order by default
 
 ### acsending
-#### Example 5.6
+#### Example 5.6🖋️:
 ```python
 numbers = [4, 1, 3, 2]
 numbers.sort()
 print(numbers)  # Output: [1, 2, 3, 4]
 ```
 ### descending
-#### Example 5.7
+#### Example 5.7🖋️:
 ```python
 numbers = [4, 1, 3, 2]
 numbers.sort(reverse=True)
@@ -580,7 +588,7 @@ print(numbers)  # Output: [4,3,2,1]
 ## Reversing a List
 By using **reverse()** we can print a reversed list
 
-#### Example 5.8
+#### Example 5.8🖋️:
 ```python 
 fruits = ['apple', 'banana', 'cherry']
 fruits.reverse()
@@ -588,7 +596,7 @@ print(fruits)  # Output: ['cherry', 'banana', 'apple']
 ```
 ## looping through a List
 
-#### Example 5.9
+#### Example 5.9🖋️:
 ```python
 fruits = ['apple', 'banana', 'cherry']
 for fruit in fruits:
@@ -597,17 +605,38 @@ for fruit in fruits:
 ## List Comprehension
 A shorthand way to create a list using a loop in one line
 
-### Example 
+### Example 🖋️:
 ```python
 squares = [x**2 for x in range(5)]
 print(squares)  # Output: [0, 1, 4, 9, 16]
 ```
+
 ---
-# **CRUD CONSOLE APPLICATION**
+# ✒️**CRUD CONSOLE APPLICATION**
+See the below CRUD (create,remove,update,delete) console application which involves logging through decorators,code building with the use of dict,list,generators... etc.
 
 ```python
 import json
 import os
+import logging
+
+logging.basicConfig (
+    filename = 'employee.log',
+    level = logging.INFO,
+    format = '%(asctime)s - %(levelname)s - %(message)s'
+)
+
+logging = logging.getLogger(__name__)
+
+def handle_exceptions(func):
+    @wraps(func)
+    def wrapper (*args, **kwargs):
+        try:
+            logging.info(f"Executing: {func.__name__}")
+            return func(*args, **kwargs)
+        except Exception as e:
+            logging.exception(f"Error while Executing: {func.__name__} : {e}")
+    return wrapper
 
 class Employee:
     def __init__(self,name,emp_id,salary,role):
@@ -688,9 +717,10 @@ if __name__=="__main__":
     employees=load_from_json(Datafile)
     menu() 
 ```
-# **CRUD API APPLICATION**
-
+# ✒️**CRUD API APPLICATION**
+The below example is a CRUD flask api application.
 ```python
+import logging
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -698,6 +728,24 @@ app = Flask(__name__)
 # In-memory employee storage
 employees = []
 id_counter = 1
+
+logging.basicConfig (
+    filename = 'employee.log',
+    level = logging.INFO,
+    format = '%(asctime)s - %(levelname)s - %(message)s'
+)
+
+logging = logging.getLogger(__name__)
+
+def handle_exceptions(func):
+    @wraps(func)
+    def wrapper (*args, **kwargs):
+        try:
+            logging.info(f"Executing: {func.__name__}")
+            return func(*args, **kwargs)
+        except Exception as e:
+            logging.exception(f"Error while Executing: {func.__name__} : {e}")
+    return wrapper
 
 # CREATE employee
 @app.route('/employees', methods=['POST'])
@@ -757,11 +805,45 @@ def delete_employee(employee_id):
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+## 📋INTERVIEW QUESTIONS
+### **Decorators**
+1.What is a decorator in Python and why is it used?
 
+2.Explain the difference between function decorators and method decorators.
 
+3.What does the @ symbol mean in Python?
 
+4.What are some real-world use cases for decorators?
 
+5.What is the difference between @staticmethod, @classmethod, and @property?
+### **Generators**
+1.What is the difference between a generator and a regular function?
 
+2.How does yield differ from return?
+
+3.Why are generators memory-efficient?
+
+4.What is a generator expression? How is it different from a list comprehension?
+### **Dictionary**
+1.What makes dictionaries in Python efficient for lookups?
+
+2.How do dict.get() and dict[] differ?
+
+3.Explain dictionary comprehension and its use cases.
+
+4.How do you merge two dictionaries in Python?
+### **Lambda**
+1.What is a lambda function and how is it different from a regular function?
+
+2.What are the limitations of lambda functions in Python?
+
+3.How can you use map(), filter(), and reduce() with lambda functions?
+### **List**
+1.What are the main differences between lists and tuples?
+
+2.How does Python handle list mutability?
+
+3.What happens when you sort a list with mixed data types?
 
 
 
