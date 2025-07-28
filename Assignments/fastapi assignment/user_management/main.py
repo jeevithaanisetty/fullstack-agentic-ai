@@ -1,12 +1,16 @@
-from fastapi import FastAPI,HTTPException,status,Depends
+from fastapi import FastAPI,HTTPException,status,Depends,Request
 from fastapi.security import OAuth2PasswordBearer
 from jose import jwt,JWTError
 from config import SECRET_KEY,ALGORITHM,EXPIRE_TIME,HASHING,MAX_ATTEMPTS
-from models import User,Login,ChangePassword
+from models import User,Login,ChangePassword,Forgotted
 from mongo_db import collection
 from datetime import datetime,timedelta
+import smtplib 
+from email.message import EmailMessage
+
 import re
 
+token_black_list=[]
 
 #----------- FastAPI Instance -------------
 app=FastAPI(title="MY API APPLICATION")
@@ -66,6 +70,8 @@ async def log_in(data:Login):
 
 def get_current_user(token:str=Depends(oauth2_shceme)):
     try:
+        if token in token_black_list:
+            raise HTTPException(status_code=400, detail="token is blocked please login again to get token")
         payload=jwt.decode(token,SECRET_KEY,algorithms=ALGORITHM)
         username=payload.get("username")
         if not username:
@@ -112,5 +118,38 @@ async def change_password(data:ChangePassword,user:str=Depends(get_current_user)
     )
     
     return {"message": "Password changed successfully"}
-    
+
+async def send_link(request:Request):
+    link=request.url_for("change_password")
+    return str(link)
+
+@app.post("/forget_password")
+async def forget_password(data:Forgotted,request:Request,user:str=Depends(get_current_user)):
+    to_email=user.get("username")
+    from_email="jeevithamolamanti@gmail.com"
+    password="jfta vhtp ulcn dizo"
+    body=await send_link(request)
+
+    msg=EmailMessage()
+    msg.set_content(body)
+    msg["Subject"]=data.subject
+    msg["From"]=from_email
+    msg["To"]=to_email
+
+    with smtplib.SMTP_SSL("smtp.gmail.com",465)as smtp:
+        smtp.login(from_email,password)
+        smtp.send_message(msg)
+    return {"message":"Email sent successfully"}
+
+@app.post("/logout")
+async def log_out(token:str=Depends(oauth2_shceme),user:str=Depends(get_current_user)):
+    username=user.get("username")
+    payload=jwt.decode(token,SECRET_KEY,algorithms=ALGORITHM)
+    user_name=payload.get("username")
+    if username!=user_name:
+        raise HTTPException(status_code=400, detail="entered token is invalid or token expired")
+    token_black_list.append(token)
+    return {"message":"user_logged_out successfully"}
+
+
     

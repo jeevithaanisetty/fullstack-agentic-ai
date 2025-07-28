@@ -20,3 +20,7 @@ class ChangePassword(BaseModel):
     password:str
     new_password:str
     
+class Forgotted(BaseModel):
+    subject:str
+    
+    
