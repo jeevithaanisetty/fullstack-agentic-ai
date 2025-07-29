@@ -1,0 +1,26 @@
+2025-07-29 08:10:41 | INFO     | users.main:38 | register() | [MainThread] | user already exists
+2025-07-29 08:11:27 | INFO     | users.main:86 | log_in() | [MainThread] | user login successful and token generated
+2025-07-29 08:11:53 | ERROR    | users.main:106 | get_current_user() | [AnyIO worker thread] | token is invalid or expired
+2025-07-29 08:13:29 | INFO     | users.main:149 | change_password() | [MainThread] | password changed
+2025-07-29 08:13:50 | INFO     | users.main:154 | send_link() | [MainThread] | link generated to change password
+2025-07-29 08:18:21 | INFO     | users.main:156 | send_link() | [MainThread] | link generated to change password
+2025-07-29 08:20:37 | INFO     | users.main:156 | send_link() | [MainThread] | link generated to change password
+2025-07-29 08:22:51 | INFO     | users.main:156 | send_link() | [MainThread] | link generated to change password
+2025-07-29 08:26:12 | INFO     | users.main:165 | forget_password() | [MainThread] | email/password are none
+2025-07-29 08:27:22 | INFO     | users.main:165 | forget_password() | [MainThread] | email/password are none
+2025-07-29 08:30:14 | INFO     | users.main:165 | forget_password() | [MainThread] | email/password are none
+2025-07-29 08:30:38 | INFO     | users.main:165 | forget_password() | [MainThread] | email/password are none
+2025-07-29 09:55:35 | ERROR    | users.main:78 | log_in() | [MainThread] | imcorrect password
+2025-07-29 09:55:40 | ERROR    | users.main:78 | log_in() | [MainThread] | imcorrect password
+2025-07-29 09:56:46 | INFO     | users.main:90 | log_in() | [MainThread] | user login successful and token generated
+2025-07-29 09:57:13 | INFO     | users.main:167 | forget_password() | [MainThread] | email/password are none
+2025-07-29 10:10:00 | INFO     | users.main:158 | send_link() | [MainThread] | link generated to change password
+2025-07-29 10:10:04 | INFO     | users.main:183 | forget_password() | [MainThread] | email sent
+2025-07-29 10:57:11 | INFO     | users.main:63 | register() | [MainThread] | user registered
+2025-07-29 10:57:40 | INFO     | users.main:72 | log_in() | [MainThread] | user not registered
+2025-07-29 10:58:26 | INFO     | users.main:63 | register() | [MainThread] | user registered
+2025-07-29 10:58:37 | INFO     | users.main:87 | log_in() | [MainThread] | user login successful and token generated
+2025-07-29 11:00:44 | INFO     | users.main:149 | change_password() | [MainThread] | password changed
+2025-07-29 11:03:04 | INFO     | users.main:154 | send_link() | [MainThread] | link generated to change password
+2025-07-29 11:03:08 | INFO     | users.main:198 | forget_password() | [MainThread] | email sent
+2025-07-29 11:05:21 | INFO     | users.main:215 | log_out() | [MainThread] | user logged out

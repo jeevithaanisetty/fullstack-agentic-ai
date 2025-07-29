@@ -22,5 +22,9 @@ class ChangePassword(BaseModel):
     
 class Forgotted(BaseModel):
     subject:str
-    
+
+class Reset(BaseModel):
+    username:str
+    new_password:str
+    confirm_password:str
     

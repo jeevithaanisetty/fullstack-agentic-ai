@@ -4,7 +4,7 @@ import logging
 def get_logger(name):
     logger = logging.getLogger(name)
     if not logger.handlers:
-            file_handler = logging.FileHandler("employees.log")
+            file_handler = logging.FileHandler("users.log")
             console_handler = logging.StreamHandler()
 
             detailed_format = '%(asctime)s | %(levelname)-8s | %(name)s:%(lineno)d | %(funcName)s() | [%(threadName)s] | %(message)s'
