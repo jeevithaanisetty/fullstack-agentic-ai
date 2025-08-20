@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URL=os.getenv("MONGO_URL","mongo://localhost:27017")
+MONGO_URL=os.getenv("MONGO_URL","mongodb://localhost:27017/")
 DATABASE_NAME=os.getenv("DB_NAME","polls_info")
 
 NEWS_API_KEY=os.getenv("NEWS_API_KEY","224aed70fc5e450e93a7b2c745e7efd9")

@@ -1,5 +1,5 @@
-from core.config import MONGO_URL,DATABASE_NAME
+from app.core.config import MONGO_URL
 import pymongo
 
-client=pymongo.Mongoclient(MONGO_URL)
-db=client(DATABASE_NAME)
+client=pymongo.MongoClient(MONGO_URL)
+db=client.DATABASE_NAME
