@@ -1,11 +1,12 @@
 import requests
 import logging
 from core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT
+from datetime import datetime, timedelta
 from db.database import db
 from services.poll_service import create_poll_service, poll_creation
 from models.poll import PollCreate
 
-async def get_news_articles():
+async def fetch_news_articles():
     logging.info ("getting news articles from web....wait")
     news_api =  requests.get(
         NEWS_API_URL, params = {
@@ -20,19 +21,34 @@ async def get_news_articles():
     print(f"total articles fetched:{len(news_articles)}")
     return news_articles
 
-async def create_poll():
+async def article_to_poll():
     created_polls=[]
-    articles=get_news_articles()
+    articles=fetch_news_articles()
     for article in articles:
         question = f"Do you agree with this news? {article['title']}"
         poll_info= PollCreate(
             question=question,
-            options={"A":"Agree","B": "Disagree", "C":"Neutral","D":"None"},
+            options=["Agree", "Disagree","Neutral","None"],
             duration_minutes=1440  # default 24 hours
         )     
         existing = await db.polls.find_one({"question": question})
         if existing:
             continue
-        created = await poll_creation(poll_info, user_id="system", source_url=article.get("url"))   # ?
+        created = await create_poll_service(poll_info, source_url=article.get("url"))  #user_id="system"
         created_polls.append(created)
     return created_polls
+
+async def create_poll_service(data, source_url=None):
+    expires_at = datetime.utcnow() + timedelta(hours=24)
+    options = [{i: opt, "votes": 0} for i,opt in enumerate(data.options,1)]
+ 
+    new_poll = {
+        "question": data.question,
+        "options": options,
+        "voted_users": [],
+        "expires_at": expires_at,
+        "is_active": True,
+        "source_url": source_url
+    }
+    result = await db.polls.insert_one(new_poll)
+    return await db.polls.find_one({"_id": result.inserted_id})    #return result
