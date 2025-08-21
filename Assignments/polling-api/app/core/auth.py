@@ -1,6 +1,6 @@
 from fastapi import Depends,HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from jose import jwt
+from jose import jwt,JWTError
 from datetime import datetime,timedelta
 from app.core.config import SECRET_KEY,ALGORITHM,TOKEN_EXPIRE_TIME
 from app.database.db import db
@@ -13,6 +13,12 @@ def create_token(data):
     return token
 
 async def get_loggedin_user(token:str=Depends(oauth2_scheme)):
+    try:
+        if not token:
+            raise HTTPException(status_code=400,detail="User should be authenticated before polling vote.Provide your token")
+    except JWTError as e:
+        raise HTTPException(status_code=401,detail="token is invalid or expired")
+    
     payload=jwt.decode(token,SECRET_KEY,algorithms=[ALGORITHM])
     user_email=payload.get("sub")
     if user_email is None:
