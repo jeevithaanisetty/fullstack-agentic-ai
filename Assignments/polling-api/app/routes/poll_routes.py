@@ -23,7 +23,7 @@ async def get_polls():
  
 @handle_exceptions
 @router.post("/polls/vote")
-async def vote_poll( vote: Vote, current_user: dict = Depends(get_loggedin_user)):
+async def vote_poll( vote: Vote, loggedin_user: dict = Depends(get_loggedin_user)):
     try:
         poll_obj_id = ObjectId(vote.poll_id)
     except Exception as e:
@@ -42,6 +42,7 @@ async def vote_poll( vote: Vote, current_user: dict = Depends(get_loggedin_user)
         raise HTTPException(status_code=400, detail="Poll has expired")
  
     # double voting check
+    current_user= await loggedin_user   # without awaiting an async function will return a coroutine object not an exact obect(ex:dict)
     if str(current_user["_id"]) in poll.get("voted_users", []):
         logging.info("You are already Voted.")
         raise HTTPException(status_code=400, detail="You already voted")
