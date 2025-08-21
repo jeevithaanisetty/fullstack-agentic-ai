@@ -1,0 +1,19 @@
+2025-08-21 10:35:31 | WARNING  | polling_api.main:18 | register() | [MainThread] | Not a valid email
+2025-08-21 10:36:05 | WARNING  | polling_api.main:21 | register() | [MainThread] | Password is not valid
+2025-08-21 10:36:17 | WARNING  | polling_api.main:21 | register() | [MainThread] | Password is not valid
+2025-08-21 10:36:23 | WARNING  | polling_api.main:21 | register() | [MainThread] | Password is not valid
+2025-08-21 10:36:31 | WARNING  | polling_api.main:21 | register() | [MainThread] | Password is not valid
+2025-08-21 10:36:53 | INFO     | polling_api.main:10 | hashing_password() | [MainThread] | Password is hashed to save
+2025-08-21 10:36:54 | INFO     | polling_api.main:30 | register() | [MainThread] | Registration successful
+2025-08-21 10:37:21 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-21 10:37:21 | ERROR    | polling_api.main:38 | login() | [MainThread] | Either no user found/ password is incorrect
+2025-08-21 10:37:44 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-21 10:37:44 | ERROR    | polling_api.main:38 | login() | [MainThread] | Either no user found/ password is incorrect
+2025-08-21 10:37:53 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-21 10:37:53 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
+2025-08-21 10:38:09 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-21 10:38:11 | INFO     | polling_api.main:37 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-08-21 10:38:11 | INFO     | polling_api.main:38 | fetch_news_articles() | [MainThread] | Total articles available: 239
+2025-08-21 10:38:11 | INFO     | polling_api.main:39 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-08-21 10:38:11 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-08-21 10:39:58 | ERROR    | polling_api.main:30 | vote_poll() | [MainThread] | Poll Id is invalid

@@ -1,11 +1,15 @@
 import requests
-import logging
 import random
 from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD
 from datetime import datetime, timedelta 
 from app.database.db import db
 from app.models.polls import PollCreate
+from app.utils.decorator import handle_exceptions
+from app.utils.logger import get_logger
 
+logger=get_logger("polling_api.main")
+
+@handle_exceptions
 def fetch_news_articles():
     now = datetime.utcnow()
     from_time = (now - timedelta(hours=48)).isoformat("T") + "Z"
@@ -30,15 +34,15 @@ def fetch_news_articles():
     total = data.get("totalResults", 0)
     articles = data.get("articles", [])
     
-    logging.info(f"Keyword: {KEYWORD}")
-    logging.info(f"Total articles available: {total}")
-    logging.info(f"Fetched: {len(articles)} articles")
+    logger.info(f"Keyword: {KEYWORD}")
+    logger.info(f"Total articles available: {total}")
+    logger.info(f"Fetched: {len(articles)} articles")
 
     if not articles:
-        logging.warning("No articles found for the given time window and keyword.")
-    
+        logger.warning("No articles found for the given time window and keyword.")
     return articles
 
+@handle_exceptions
 async def create_poll_service(data, source_url=None):
     expires_at = datetime.utcnow() + timedelta(hours=24)
     options = [{"text": opt, "votes": 0} for opt in (data.options)]
@@ -54,12 +58,13 @@ async def create_poll_service(data, source_url=None):
     result =  db.polls.insert_one(new_poll)
     return db.polls.find_one({"_id": result.inserted_id})    #return result
 
+@handle_exceptions
 def delete_expired_polls():
     now = datetime.utcnow()
     result = db.polls.delete_many({"expires_at": {"$lt": now}})
-    logging.info(f"Deleted {result.deleted_count} expired polls.")
+    logger.info(f"Deleted {result.deleted_count} expired polls.")
 
-
+@handle_exceptions
 async def article_to_poll():
     created_polls=[]
     delete_expired_polls()
@@ -78,7 +83,7 @@ async def article_to_poll():
         existing = db.polls.find_one({"$or": [{"question": question}, {"source_url": url}]})
         if existing:
             continue
-        created = await create_poll_service(poll_info, source_url=article.get("url"))  #user_id="system"
+        created = await create_poll_service(poll_info, source_url=article.get("url"))
         created_polls.append(created)
     return created_polls
 

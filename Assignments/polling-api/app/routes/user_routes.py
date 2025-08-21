@@ -3,29 +3,39 @@ from app.models.user import UserCreate
 from app.database.db import db
 from app.utils.hashing import hashing_password, verify_password
 from app.core.auth import create_token
+from app.utils.logger import get_logger
+from app.utils.decorator import handle_exceptions
 import re
  
 router = APIRouter()
+logger=get_logger("polling_api.main")
  
+@handle_exceptions
 @router.post("/register")
 async def register(user: UserCreate):
 
     if not re.match(r"[a-z0-9]+@[a-z]+\.(com)",user.email):
+        logger.warning("Not a valid email")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail="Email must be a valid email address")
     if not re.match(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$",user.password):
+        logger.warning("Password is not valid")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail="password should contain atleast 8 letters which include one capital,one small,one digit and atleast one special character")
     
     if db.users.find_one({"email": user.email}):
-        raise HTTPException(status_code=400, detail="Email already registered")
+        logger.error("Already registered email")
+        raise HTTPException(status_code=400, detail="Email already registered.Provide another...")
     hashed = hashing_password(user.password)
     new_user = {"email": user.email, "password": hashed}
-    result = db.users.insert_one(new_user)                # {"_id": result.inserted_id}
+    db.users.insert_one(new_user)
+    logger.info("Registration successful")
     return "user registered successfully"
  
+@handle_exceptions
 @router.post("/login")
 async def login(user: UserCreate):
     db_user = db.users.find_one({"email": user.email})
     if not db_user or not verify_password(user.password, db_user["password"]):
-        raise HTTPException(status_code=400, detail="Invalid credentials")
+        logger.error("Either no user found/ password is incorrect")
+        raise HTTPException(status_code=400, detail="Invalid credentials.Check email and password")
     token = create_token(user.email)
     return {"access_token": token, "token_type": "bearer"}
