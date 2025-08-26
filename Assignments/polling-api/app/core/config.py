@@ -20,7 +20,7 @@ keywords = [
 KEYWORD = random.choice(keywords)
 ARTICLE_COUNT=15
 
-SECRET_KEY=os.getenv("SECRET_KEY","HAappy123!")
+SECRET_KEY=os.getenv("SECRET_KEY")
 ALGORITHM="HS256"
 TOKEN_EXPIRE_TIME=30
 

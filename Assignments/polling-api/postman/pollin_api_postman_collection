@@ -146,7 +146,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtdWt1bmRoQGdtYWlsLmNvbSIsImV4cCI6MTc1NTc4NTM3Mn0.b8DBa1iXi5MnmvOx1Eiz4bLI7yfBkCKkDfBGQ9E6K8U",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtdWt1bmRoQGdtYWlsLmNvbSIsImV4cCI6MTc1NjE4NTQ0N30.C7JnBv4ptImcu9pOzUMYFXp6NvkMKJ8WgMGwRizQTnA",
 							"type": "string"
 						}
 					]
@@ -155,7 +155,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"poll_id\":\"68a69da64eb6a9486194012b\",\r\n    \"option\":\"2\"\r\n}",
+					"raw": "{\r\n    \"poll_id\":\"68ad3c495e4221b7810594fa\",\r\n    \"option\":\"2\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -175,6 +175,90 @@
 					"path": [
 						"polls",
 						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_poll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcmlAZ21haWwuY29tIiwiZXhwIjoxNzU2MTgzNDE5fQ.PXXFn5C5jM9OM0XMpUERAJ641iMf0LtO_8ESJ78FFz4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"What is your opinion about marriage age of 21?\",\r\n    \"description\":\"india gov increased the marriage age to 21 recently.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/admin/polls",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"polls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcmlAZ21haWwuY29tIiwiZXhwIjoxNzU2MTgzNDE5fQ.PXXFn5C5jM9OM0XMpUERAJ641iMf0LtO_8ESJ78FFz4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Poll_Id\":\"68ad35a7d0875ca90ebee1ee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/admin/delete_poll",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"delete_poll"
 					]
 				}
 			},

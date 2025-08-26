@@ -12,7 +12,7 @@ logger=get_logger("polling_api.main")
 @handle_exceptions
 def fetch_news_articles():
     now = datetime.utcnow()
-    from_time = (now - timedelta(hours=48)).isoformat("T") + "Z"
+    from_time = (now - timedelta(hours=96)).isoformat("T") + "Z"
     to_time = now.isoformat("T") + "Z"
 
     response = requests.get(

@@ -28,3 +28,13 @@
 2025-08-26 09:43:39 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
 2025-08-26 09:47:56 | INFO     | polling_api.main:79 | manual_poll_creation() | [MainThread] | created poll successfully
 2025-08-26 09:48:47 | INFO     | polling_api.main:79 | manual_poll_creation() | [MainThread] | created poll successfully
+2025-08-26 10:06:10 | ERROR    | polling_api.main:25 | register() | [MainThread] | Already registered email
+2025-08-26 10:06:40 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 10:06:40 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
+2025-08-26 10:06:49 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:12:30 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:12:31 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 10:12:32 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 10:12:32 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:13:02 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:14:19 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
