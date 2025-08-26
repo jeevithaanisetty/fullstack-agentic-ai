@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from bson.objectid import ObjectId  
 from app.database.db import db
-from app.models.polls import Vote,Poll
+from app.models.polls import Vote,Poll,Delete,PollCreate
 from app.services.services import article_to_poll
 from app.core.auth import get_loggedin_user
 from datetime import datetime,timedelta
@@ -78,6 +78,22 @@ async def manual_poll_creation(data:Poll,loggedin_user:dict=Depends(get_loggedin
     result=db.polls.insert_one(poll)
     logger.info("created poll successfully")
     return f"Poll created successfully ,poll_id : str {result.inserted_id}"
+
+@handle_exceptions
+@router.post("/admin/delete_poll")
+async def delete_poll(data:Delete,loggedin_user:dict=Depends(get_loggedin_user)):
+    user=await loggedin_user
+    if user["role"]!="admin":
+        logger.error("Admin not authenticated")
+        raise HTTPException(status_code=403, detail="Not Authorized")
+    poll=db.polls.find_one({"_id":ObjectId(data.Poll_Id)})
+    if not poll:
+        logger.error(f"no poll found with poll_id:{data.Poll_Id} to delete")
+        raise HTTPException(status_code=404,detail="Poll not found")
+    
+    db.polls.delete_one({"_id":ObjectId(data.Poll_Id)})
+    return {"msg":"Poll deleted successfully"}
+
 
 
 

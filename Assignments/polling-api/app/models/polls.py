@@ -13,3 +13,5 @@ class Poll(BaseModel):
     title:str
     description:str
 
+class Delete(BaseModel):
+    Poll_Id:str
