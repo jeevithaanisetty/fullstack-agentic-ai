@@ -25,7 +25,7 @@ async def register(user: UserCreate):
         logger.error("Already registered email")
         raise HTTPException(status_code=400, detail="Email already registered.Provide another...")
     hashed = hashing_password(user.password)
-    new_user = {"email": user.email, "password": hashed}
+    new_user = {"email": user.email, "password": hashed,"role":"user"}
     db.users.insert_one(new_user)
     logger.info("Registration successful")
     return "user registered successfully"

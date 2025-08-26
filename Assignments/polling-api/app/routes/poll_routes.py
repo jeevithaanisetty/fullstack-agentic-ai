@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException
-from bson import ObjectId   
+from bson.objectid import ObjectId  
 from app.database.db import db
-from app.models.polls import PollCreate, Vote
+from app.models.polls import Vote,Poll
 from app.services.services import article_to_poll
 from app.core.auth import get_loggedin_user
-from datetime import datetime
+from datetime import datetime,timedelta
 from app.utils.logger import get_logger
 from app.utils.decorator import handle_exceptions
 import logging
@@ -58,5 +58,27 @@ async def vote_poll( vote: Vote, loggedin_user: dict = Depends(get_loggedin_user
     db.polls.update_one({"_id": poll_obj_id}, {"$set": poll})
     logger.info("User voted successfully")
     return "voted successfully"
+
+@handle_exceptions
+@router.post("/admin/polls")
+async def manual_poll_creation(data:Poll,loggedin_user:dict=Depends(get_loggedin_user)):
+    user=await loggedin_user
+    if user["role"]!="admin":
+        logger.error("Admin not authenticated")
+        raise HTTPException(status_code=403, detail="Not Authorized")
+    expires_at = datetime.utcnow() + timedelta(hours=24)
+    options = [{"1":"Agree","2":"Disagree","3":"Neutral"}]
+
+    poll={
+        "title":data.title,
+        "description":data.description,
+        "options":options,
+        "expires_at":expires_at,
+    }
+    result=db.polls.insert_one(poll)
+    logger.info("created poll successfully")
+    return f"Poll created successfully ,poll_id : str {result.inserted_id}"
+
+
 
  

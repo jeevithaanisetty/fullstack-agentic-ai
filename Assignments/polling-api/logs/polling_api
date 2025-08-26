@@ -22,3 +22,9 @@
 2025-08-21 19:14:22 | INFO     | polling_api.main:56 | vote_poll() | [MainThread] | Poll voting count is updated
 2025-08-21 19:14:22 | INFO     | polling_api.main:59 | vote_poll() | [MainThread] | User voted successfully
 2025-08-21 19:16:55 | ERROR    | polling_api.main:25 | register() | [MainThread] | Already registered email
+2025-08-26 09:29:43 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 09:29:43 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
+2025-08-26 09:43:38 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 09:43:39 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
+2025-08-26 09:47:56 | INFO     | polling_api.main:79 | manual_poll_creation() | [MainThread] | created poll successfully
+2025-08-26 09:48:47 | INFO     | polling_api.main:79 | manual_poll_creation() | [MainThread] | created poll successfully

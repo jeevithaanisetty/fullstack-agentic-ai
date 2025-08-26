@@ -8,3 +8,8 @@ class PollCreate(BaseModel):
 class Vote(BaseModel):
     poll_id:str
     option: int
+
+class Poll(BaseModel):
+    title:str
+    description:str
+
