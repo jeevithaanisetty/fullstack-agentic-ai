@@ -38,3 +38,12 @@
 2025-08-26 10:12:32 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
 2025-08-26 10:13:02 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
 2025-08-26 10:14:19 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:17:02 | INFO     | polling_api.main:65 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-08-26 10:17:05 | INFO     | polling_api.main:37 | fetch_news_articles() | [MainThread] | Keyword: science
+2025-08-26 10:17:05 | INFO     | polling_api.main:38 | fetch_news_articles() | [MainThread] | Total articles available: 1551
+2025-08-26 10:17:05 | INFO     | polling_api.main:39 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-08-26 10:17:05 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-08-26 10:17:26 | INFO     | polling_api.main:15 | verify_password() | [MainThread] | Password is verified
+2025-08-26 10:17:27 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
+2025-08-26 10:18:06 | INFO     | polling_api.main:56 | vote_poll() | [MainThread] | Poll voting count is updated
+2025-08-26 10:18:06 | INFO     | polling_api.main:59 | vote_poll() | [MainThread] | User voted successfully
