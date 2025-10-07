@@ -47,3 +47,4 @@
 2025-08-26 10:17:27 | INFO     | polling_api.main:18 | create_token() | [MainThread] | token is generated
 2025-08-26 10:18:06 | INFO     | polling_api.main:56 | vote_poll() | [MainThread] | Poll voting count is updated
 2025-08-26 10:18:06 | INFO     | polling_api.main:59 | vote_poll() | [MainThread] | User voted successfully
+2025-10-01 14:48:45 | ERROR    | polling_api.main:25 | register() | [MainThread] | Already registered email
