@@ -48,3 +48,42 @@
 2025-08-26 10:18:06 | INFO     | polling_api.main:56 | vote_poll() | [MainThread] | Poll voting count is updated
 2025-08-26 10:18:06 | INFO     | polling_api.main:59 | vote_poll() | [MainThread] | User voted successfully
 2025-10-01 14:48:45 | ERROR    | polling_api.main:25 | register() | [MainThread] | Already registered email
+2025-10-13 17:27:08 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 15 expired polls.
+2025-10-13 17:27:09 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-13 17:27:09 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 3794
+2025-10-13 17:27:09 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 17:27:10 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:10 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:10 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:11 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:11 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:12 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:12 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:12 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:12 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:13 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:13 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:14 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:14 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:14 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:14 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-13 17:27:53 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:27:54 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-13 17:27:54 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 3794
+2025-10-13 17:27:54 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 17:27:54 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:55 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:55 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:56 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:56 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:56 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:56 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:57 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:57 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:58 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:58 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:58 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:59 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:59 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:59 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 17:27:59 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours

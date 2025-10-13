@@ -1,13 +1,17 @@
 import requests
 import random
-from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD
+from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD,GEMINI_API_KEY
 from datetime import datetime, timedelta 
 from app.database.db import db
 from app.models.polls import PollCreate
 from app.utils.decorator import handle_exceptions
 from app.utils.logger import get_logger
+import google.generativeai as genai
 
 logger=get_logger("polling_api.main")
+
+genai.configure(api_key="GEMINI_API_KEY")
+model=genai.GenerativeModel("gemini-2.5-flash")
 
 @handle_exceptions
 def fetch_news_articles():
@@ -71,19 +75,37 @@ async def article_to_poll():
     articles=fetch_news_articles()
     for article in articles:
         title = article.get("title")
+        content=article.get("content","")
         if not title:
             continue
-        question = f"Do you agree with this news? {article['title']}"
-        poll_info= PollCreate(
-            question=question,
-            options=["Agree", "Disagree","Neutral","None"],
-            duration_minutes=1440  # default 24 hours
-        )
-        url = article.get("url")
-        existing = db.polls.find_one({"$or": [{"question": question}, {"source_url": url}]})
-        if existing:
+
+        prompt=f"""Based on this news article, generate a short poll question and four options.
+        Article title: {title}
+        Content: {content}
+        Return results in JSON format with keys: question, options. """
+
+        try:
+            response=model.generate_content(prompt)
+            output=response.text
+
+            question=output.get("question",f"Do you agree with this news? {title}")
+            options=output.get("options",["Agree", "Disagree","Neutral","None"])
+
+            poll_info= PollCreate(
+                question=question,
+                options=options,
+                duration_minutes=1440  # default 24 hours
+            )
+            url = article.get("url")
+            existing = db.polls.find_one({"$or": [{"question": question}, {"source_url": url}]})
+            if existing:
+                continue
+            created = await create_poll_service(poll_info, source_url=article.get("url"))
+            created_polls.append(created)
+        except Exception as e:
+            logger.error("AI poll generation is failed")
+            print("AI poll generation failed:{e}")
             continue
-        created = await create_poll_service(poll_info, source_url=article.get("url"))
-        created_polls.append(created)
+
     return created_polls
 
