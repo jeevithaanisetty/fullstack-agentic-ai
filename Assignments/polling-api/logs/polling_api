@@ -87,3 +87,119 @@
 2025-10-13 17:27:59 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
 2025-10-13 17:27:59 | ERROR    | polling_api.main:106 | article_to_poll() | [MainThread] | AI poll generation is failed
 2025-10-13 17:27:59 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-13 17:32:56 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:33:02 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-13 17:33:02 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 1317
+2025-10-13 17:33:02 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 13 articles
+2025-10-13 17:35:26 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:35:27 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-10-13 17:35:27 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 400
+2025-10-13 17:35:27 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 17:37:25 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:37:27 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: technology
+2025-10-13 17:37:27 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 3769
+2025-10-13 17:37:27 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 17:41:42 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:41:44 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: education
+2025-10-13 17:41:44 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 1679
+2025-10-13 17:41:44 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 17:42:54 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:42:55 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: mental health
+2025-10-13 17:42:55 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 902
+2025-10-13 17:42:55 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 17:47:02 | INFO     | polling_api.main:69 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:47:04 | INFO     | polling_api.main:41 | fetch_news_articles() | [MainThread] | Keyword: mental health
+2025-10-13 17:47:04 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Total articles available: 902
+2025-10-13 17:47:04 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 17:47:39 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:47:40 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: health
+2025-10-13 17:47:40 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 4629
+2025-10-13 17:47:40 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 17:52:40 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:52:41 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: economy
+2025-10-13 17:52:41 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 2250
+2025-10-13 17:52:41 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 17:58:23 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 17:58:25 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: technology
+2025-10-13 17:58:25 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 3735
+2025-10-13 17:58:25 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:04:49 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:04:51 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: elections
+2025-10-13 18:04:51 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 737
+2025-10-13 18:04:51 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:08:06 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:08:07 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: sports
+2025-10-13 18:08:07 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 3600
+2025-10-13 18:08:07 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:12:43 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:12:44 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: education
+2025-10-13 18:12:44 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 1671
+2025-10-13 18:12:44 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:14:03 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:14:05 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-13 18:14:05 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 3723
+2025-10-13 18:14:05 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 18:16:10 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:16:11 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-10-13 18:16:11 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 390
+2025-10-13 18:16:11 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 18:19:22 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:19:24 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-10-13 18:19:24 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 390
+2025-10-13 18:19:24 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 18:20:14 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:20:15 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: sports
+2025-10-13 18:20:15 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 3595
+2025-10-13 18:20:15 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 13 articles
+2025-10-13 18:25:24 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:25:25 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-13 18:25:25 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 1313
+2025-10-13 18:25:25 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 18:26:10 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:26:11 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: mental health
+2025-10-13 18:26:11 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 892
+2025-10-13 18:26:11 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:55:46 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:55:49 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: climate
+2025-10-13 18:55:49 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 1995
+2025-10-13 18:55:49 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 8 articles
+2025-10-13 18:57:33 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:57:35 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-13 18:57:35 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 1303
+2025-10-13 18:57:35 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 18:58:32 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 18:58:34 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-13 18:58:34 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 3667
+2025-10-13 18:58:34 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 19:00:30 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 19:00:32 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: cybersecurity
+2025-10-13 19:00:32 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 377
+2025-10-13 19:00:32 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 19:03:45 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 19:03:47 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: mental health
+2025-10-13 19:03:47 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 880
+2025-10-13 19:03:47 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-13 19:08:12 | INFO     | polling_api.main:70 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 19:08:13 | INFO     | polling_api.main:42 | fetch_news_articles() | [MainThread] | Keyword: elections
+2025-10-13 19:08:13 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Total articles available: 733
+2025-10-13 19:08:13 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 19:09:00 | INFO     | polling_api.main:71 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-13 19:09:02 | INFO     | polling_api.main:43 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-13 19:09:02 | INFO     | polling_api.main:44 | fetch_news_articles() | [MainThread] | Total articles available: 3644
+2025-10-13 19:09:02 | INFO     | polling_api.main:45 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-13 19:09:09 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:09:17 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:09:25 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:09:33 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:09:47 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:09:53 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:01 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:11 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:17 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:28 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:38 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:45 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:10:52 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:11:01 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:11:05 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-13 19:11:05 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours

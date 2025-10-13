@@ -1,5 +1,7 @@
 import requests
 import random
+import json
+import re
 from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD,GEMINI_API_KEY
 from datetime import datetime, timedelta 
 from app.database.db import db
@@ -10,7 +12,7 @@ import google.generativeai as genai
 
 logger=get_logger("polling_api.main")
 
-genai.configure(api_key="GEMINI_API_KEY")
+genai.configure(api_key="AIzaSyCnXEIs0501K4LD5Lkd6hr66S508RqOjsk")
 model=genai.GenerativeModel("gemini-2.5-flash")
 
 @handle_exceptions
@@ -79,14 +81,39 @@ async def article_to_poll():
         if not title:
             continue
 
-        prompt=f"""Based on this news article, generate a short poll question and four options.
-        Article title: {title}
-        Content: {content}
-        Return results in JSON format with keys: question, options. """
+        # prompt=f"""Based on this news article, generate a short poll question and four options.
+        # Return results in JSON with keys: question, options.
+        # Example:
+        # {{
+        #     "question":"Do you agree with the government's new policy?",
+        #     "options":["Agree", "Disagree","Neutral","None"]
+        # }}
+        # Article title: {title}
+        # Content: {content}"""
+        prompt = f"""Generate a poll question and options about this news:
+                    {title}
 
+                    Return only valid JSON in the format:
+                    {{
+                    "question": "<your question>",
+                    "options": ["Option1", "Option2", "Option3", "Option4"]
+                    }}
+                    Do not include any text outside JSON.
+                    """
         try:
             response=model.generate_content(prompt)
-            output=response.text
+            ai_output=response.text   #str
+            #print(type(ai_output))
+            try:
+                output=json.loads(ai_output)  #dict
+                #print(type(output))
+            except json.JSONDecodeError:
+                match = re.search(r'\{.*\}', ai_output, re.DOTALL)
+                if match:
+                    try:
+                        output = json.loads(match.group())
+                    except json.JSONDecodeError:
+                        print("Still invalid JSON:", match.group())
 
             question=output.get("question",f"Do you agree with this news? {title}")
             options=output.get("options",["Agree", "Disagree","Neutral","None"])
