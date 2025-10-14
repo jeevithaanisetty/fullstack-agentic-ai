@@ -270,3 +270,141 @@
 2025-10-14 09:41:54 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
 2025-10-14 09:41:54 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
 2025-10-14 09:41:54 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-14 09:48:59 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:49:01 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: space
+2025-10-14 09:49:01 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 3029
+2025-10-14 09:49:01 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 09:49:10 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:49:10 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:50:17 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:50:18 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: science
+2025-10-14 09:50:18 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 1485
+2025-10-14 09:50:18 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 09:50:30 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:51:09 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:51:11 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: finance
+2025-10-14 09:51:11 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 1222
+2025-10-14 09:51:11 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-14 09:51:23 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:53:52 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:53:54 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: economy
+2025-10-14 09:53:54 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 1541
+2025-10-14 09:53:54 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 09:54:02 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:54:11 | INFO     | polling_api.main:24 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 09:57:32 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:57:33 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: sports
+2025-10-14 09:57:33 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 3248
+2025-10-14 09:57:33 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 09:57:45 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:57:50 | INFO     | polling_api.main:24 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:00:36 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:00:38 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: health
+2025-10-14 10:00:38 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 3878
+2025-10-14 10:00:38 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:00:48 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:00:51 | INFO     | polling_api.main:24 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:07:15 | INFO     | polling_api.main:95 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:07:17 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-14 10:07:17 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Total articles available: 1110
+2025-10-14 10:07:17 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:09:11 | INFO     | polling_api.main:95 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:09:12 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Keyword: technology
+2025-10-14 10:09:12 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Total articles available: 2851
+2025-10-14 10:09:12 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:09:26 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:10:05 | INFO     | polling_api.main:95 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:10:07 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Keyword: cybersecurity
+2025-10-14 10:10:07 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Total articles available: 293
+2025-10-14 10:10:07 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:10:20 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:10:23 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:13:25 | INFO     | polling_api.main:94 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:13:27 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Keyword: technology
+2025-10-14 10:13:27 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Total articles available: 2852
+2025-10-14 10:13:27 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:13:34 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:13:38 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:14:51 | INFO     | polling_api.main:92 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:14:52 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-14 10:14:52 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Total articles available: 1112
+2025-10-14 10:14:52 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:15:07 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:15:11 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:15:17 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:15:21 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:15:37 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:15:40 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:15:48 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:15:51 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:16:00 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:16:04 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:16:20 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:16:27 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:16:33 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:16:36 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:16:44 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:16:47 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:17:01 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:17:04 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:17:13 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:17:16 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:17:25 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:17:28 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:17:41 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:17:46 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:18:00 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:18:03 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:18:14 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:18:17 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:18:32 | INFO     | polling_api.main:31 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:18:36 | INFO     | polling_api.main:25 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:18:36 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-14 10:20:50 | INFO     | polling_api.main:94 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:20:52 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-10-14 10:20:52 | INFO     | polling_api.main:62 | fetch_news_articles() | [MainThread] | Total articles available: 299
+2025-10-14 10:20:52 | INFO     | polling_api.main:63 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:21:09 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:21:13 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:21:26 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:21:29 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:21:45 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:21:48 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:21:55 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:21:58 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:22:09 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:22:13 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:22:38 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:22:41 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:22:52 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:22:55 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:23:07 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:23:11 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:23:25 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:23:28 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:23:46 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:23:49 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:23:56 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:23:59 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:24:09 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:24:13 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:24:27 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:24:30 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:24:43 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:24:46 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:24:55 | INFO     | polling_api.main:33 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 10:24:58 | INFO     | polling_api.main:26 | tavily_searching() | [MainThread] | related content is found with tavily search
+2025-10-14 10:24:58 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-14 10:36:21 | INFO     | polling_api.main:94 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:36:23 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Keyword: education
+2025-10-14 10:36:23 | INFO     | polling_api.main:62 | fetch_news_articles() | [MainThread] | Total articles available: 1413
+2025-10-14 10:36:23 | INFO     | polling_api.main:63 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:39:52 | INFO     | polling_api.main:94 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:39:53 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Keyword: startups
+2025-10-14 10:39:53 | INFO     | polling_api.main:62 | fetch_news_articles() | [MainThread] | Total articles available: 299
+2025-10-14 10:39:53 | INFO     | polling_api.main:63 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:40:46 | INFO     | polling_api.main:94 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 10:40:48 | INFO     | polling_api.main:61 | fetch_news_articles() | [MainThread] | Keyword: science
+2025-10-14 10:40:48 | INFO     | polling_api.main:62 | fetch_news_articles() | [MainThread] | Total articles available: 1485
+2025-10-14 10:40:48 | INFO     | polling_api.main:63 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 10:42:18 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
