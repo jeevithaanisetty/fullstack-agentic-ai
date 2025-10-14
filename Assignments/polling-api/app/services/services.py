@@ -2,21 +2,36 @@ import requests
 import random
 import json
 import re
-from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD,GEMINI_API_KEY
+from app.core.config import NEWS_API_KEY,NEWS_API_URL,ARTICLE_COUNT,KEYWORD,GEMINI_API_KEY,TAVILY_API_KEY
 from datetime import datetime, timedelta 
 from app.database.db import db
 from app.models.polls import PollCreate
 from app.utils.decorator import handle_exceptions
 from app.utils.logger import get_logger
 import google.generativeai as genai
+from tavily import TavilyClient
 
 logger=get_logger("polling_api.main")
 
 genai.configure(api_key="AIzaSyCnXEIs0501K4LD5Lkd6hr66S508RqOjsk")
 model=genai.GenerativeModel("gemini-2.5-flash")
+# tavily
+client=TavilyClient(api_key=TAVILY_API_KEY)
+
+async def tavily_search(query):
+    url="https://api.tavily.com/search"
+    response=tavily_search(query)
+    logger.info("related content is found with tavily search")
+    return response
+
+async def summarize_article(article):
+    prompt=f"Summarize this news article in 2 lines:\n\nTitle:{article["title"]}\n\nContent:{article.get("content","")}"
+    response=model.generate_content(prompt)
+    logger.info("article is summarized using genai")
+    return response.text.strip()
 
 @handle_exceptions
-def fetch_news_articles():
+async def fetch_news_articles():
     now = datetime.utcnow()
     from_time = (now - timedelta(hours=96)).isoformat("T") + "Z"
     to_time = now.isoformat("T") + "Z"
@@ -52,13 +67,15 @@ def fetch_news_articles():
 async def create_poll_service(data, source_url=None):
     expires_at = datetime.utcnow() + timedelta(hours=24)
     options = [{"text": opt, "votes": 0} for opt in (data.options)]
-
+    
     new_poll = {
         "question": data.question,
         "options": options,
         "voted_users": [],
         "expires_at": expires_at,
         "is_active": True,
+        "summary":data.summary,
+        "related_info":data.related_info,
         "source_url": source_url
     }
     result =  db.polls.insert_one(new_poll)
@@ -74,22 +91,12 @@ def delete_expired_polls():
 async def article_to_poll():
     created_polls=[]
     delete_expired_polls()
-    articles=fetch_news_articles()
+    articles=await fetch_news_articles()
     for article in articles:
         title = article.get("title")
         content=article.get("content","")
         if not title:
             continue
-
-        # prompt=f"""Based on this news article, generate a short poll question and four options.
-        # Return results in JSON with keys: question, options.
-        # Example:
-        # {{
-        #     "question":"Do you agree with the government's new policy?",
-        #     "options":["Agree", "Disagree","Neutral","None"]
-        # }}
-        # Article title: {title}
-        # Content: {content}"""
         prompt = f"""Generate a poll question and options about this news:
                     {title}
 
@@ -117,11 +124,16 @@ async def article_to_poll():
 
             question=output.get("question",f"Do you agree with this news? {title}")
             options=output.get("options",["Agree", "Disagree","Neutral","None"])
+            
+            article_summary=await summarize_article(article)
+            tavily_response=await tavily_search(article["title"])
 
             poll_info= PollCreate(
                 question=question,
                 options=options,
-                duration_minutes=1440  # default 24 hours
+                duration_minutes=1440,  # default 24 hours
+                summary=article_summary,
+                related_info=tavily_response 
             )
             url = article.get("url")
             existing = db.polls.find_one({"$or": [{"question": question}, {"source_url": url}]})

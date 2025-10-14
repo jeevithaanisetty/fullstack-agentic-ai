@@ -203,3 +203,70 @@
 2025-10-13 19:11:01 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
 2025-10-13 19:11:05 | ERROR    | polling_api.main:133 | article_to_poll() | [MainThread] | AI poll generation is failed
 2025-10-13 19:11:05 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-14 09:23:30 | INFO     | polling_api.main:86 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:26:58 | INFO     | polling_api.main:86 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:30:15 | INFO     | polling_api.main:86 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:30:17 | INFO     | polling_api.main:56 | fetch_news_articles() | [MainThread] | Keyword: politics
+2025-10-14 09:30:17 | INFO     | polling_api.main:57 | fetch_news_articles() | [MainThread] | Total articles available: 1110
+2025-10-14 09:30:17 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Fetched: 15 articles
+2025-10-14 09:30:33 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:30:41 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:30:55 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:31:03 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:31:16 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:31:32 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:31:40 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:31:55 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:03 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:13 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:19 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:32 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:42 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:49 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:56 | ERROR    | polling_api.main:143 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:32:56 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
+2025-10-14 09:39:22 | INFO     | polling_api.main:88 | delete_expired_polls() | [MainThread] | Deleted 0 expired polls.
+2025-10-14 09:39:25 | INFO     | polling_api.main:58 | fetch_news_articles() | [MainThread] | Keyword: education
+2025-10-14 09:39:25 | INFO     | polling_api.main:59 | fetch_news_articles() | [MainThread] | Total articles available: 1409
+2025-10-14 09:39:25 | INFO     | polling_api.main:60 | fetch_news_articles() | [MainThread] | Fetched: 14 articles
+2025-10-14 09:39:38 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:39:38 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:39:38 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:39:44 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:39:44 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:39:44 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:39:57 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:39:57 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:39:57 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:40:10 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:40:10 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:40:10 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:40:26 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:40:26 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:40:26 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:40:36 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:40:36 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:40:36 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:40:50 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:40:50 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:40:50 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:03 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:03 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:03 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:16 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:16 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:16 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:29 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:29 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:29 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:38 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:38 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:38 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:39 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:46 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:46 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:46 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:54 | INFO     | polling_api.main:30 | summarize_article() | [MainThread] | article is summarized using genai
+2025-10-14 09:41:54 | INFO     | polling_api.main:24 | tavily_search() | [MainThread] | related content is found with tavily search
+2025-10-14 09:41:54 | ERROR    | polling_api.main:145 | article_to_poll() | [MainThread] | AI poll generation is failed
+2025-10-14 09:41:54 | INFO     | polling_api.main:21 | get_polls() | [MainThread] | Polls are generated for last 48 hours
