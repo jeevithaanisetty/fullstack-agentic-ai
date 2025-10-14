@@ -4,6 +4,8 @@ python >= 3.12.9
 pip install fastapi
 pip install uvicorn
 pip install Pymongo
+pip install -q -U google-generativeai
+pip install tavily-python
 postman
 mongodb
 

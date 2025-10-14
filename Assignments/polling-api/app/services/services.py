@@ -13,7 +13,7 @@ from tavily import TavilyClient
 
 logger=get_logger("polling_api.main")
 
-genai.configure(api_key="AIzaSyCnXEIs0501K4LD5Lkd6hr66S508RqOjsk")
+genai.configure(api_key=GEMINI_API_KEY)
 model=genai.GenerativeModel("gemini-2.5-flash")
 # tavily
 client=TavilyClient(api_key=TAVILY_API_KEY)
