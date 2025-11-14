@@ -1,8 +1,4 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
-from graph import GraphState
-
-llm=ChatGoogleGenerativeAI(model="gemini-2.5-pro")
-
+from graph import GraphState,llm
 
 async def search_agent(state:GraphState):
     query=state["query"]
@@ -11,5 +7,5 @@ async def search_agent(state:GraphState):
     Provide 5 bullet points of factual information.
     Topic:{query}
     """
-    response= await llm.invoke(prompt)
+    response= llm.invoke(prompt)
     return {"search_results":response.content}
