@@ -2,10 +2,12 @@ langchain
 langgraph
 langfuse
 python 3.12
+mongodb
 fastapi
 uvicorn
 requests
 pydantic
 python-dotenv
+langchain_google_genai
 google-generativeai
 
