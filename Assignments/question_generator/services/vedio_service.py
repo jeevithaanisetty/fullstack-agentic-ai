@@ -5,6 +5,8 @@ import shutil
 from fastapi import UploadFile, HTTPException
 from config import UPLOAD_DIR
 
+from services.audio_service import AudioService
+
 class VedioService:
     Allowed_Extensions={
         ".mp4",
@@ -12,7 +14,7 @@ class VedioService:
         ".avi",
         ".mkv"
     }
-
+    @staticmethod
     def save_vedio(file:UploadFile):
         extension=os.path.splitext(file.filename)[1].lower()
         if extension not in VedioService.Allowed_Extensions:
@@ -31,8 +33,13 @@ class VedioService:
                 file.file,
                 buffer
             )
+
+        audio_path= AudioService.extract_audio(filepath)
+
         return {
-        "vedio_id":vedio_id,
+            "vedio_id":vedio_id,
             "file_name":filename,
-            "file_path":filepath
+            "vedio_path":filepath,
+            "audio_path": audio_path
+
         }
