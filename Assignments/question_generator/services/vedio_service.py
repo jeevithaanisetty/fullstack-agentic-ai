@@ -34,12 +34,4 @@ class VedioService:
                 buffer
             )
 
-        audio_path= AudioService.extract_audio(filepath)
-
-        return {
-            "vedio_id":vedio_id,
-            "file_name":filename,
-            "vedio_path":filepath,
-            "audio_path": audio_path
-
-        }
+        return filepath
