@@ -17,7 +17,7 @@ async def upload_vedio(file:UploadFile=File(...)):
     try:
         vedio_path= VedioService.save_vedio(file)
         audio_path=AudioService.extract_audio(vedio_path)
-        transcript= TranscriptionService.trancsribe_audio(audio_path)
+        transcript= TranscriptionService.transcribe_audio(audio_path)
         transcript_path=f"transcripts/{file.filename}.json"
         TranscriptionService.save_transcript(transcript,transcript_path)
         return{
