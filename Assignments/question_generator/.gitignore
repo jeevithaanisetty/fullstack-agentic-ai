@@ -2,3 +2,4 @@ uploads/
 audio/
 transcripts/
 __pycache__/
+.env/

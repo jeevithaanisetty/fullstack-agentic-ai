@@ -1,11 +1,12 @@
 from openai import OpenAI
 import json
+from config import OPENROUTER_API_KEY
 
 class QuestionService:
 
     client=OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="MY_OPENROUTER_API_KEY"
+        api_key= OPENROUTER_API_KEY
     )
 
     @staticmethod
@@ -14,7 +15,7 @@ class QuestionService:
                 You are an AI tutor.
                 Generate questions ONLY from the transcript below.
                 Return only valid JSON in the following format:
-                {
+                {{
                     "mcqs":[
                     {{
                         "question":"",
@@ -22,11 +23,11 @@ class QuestionService:
                         "answer":""
                     }}
                     ]
-                }
+                }}
                 Transcript:{transcript}
                 """
         response=QuestionService.client.chat.completions.create(
-            model="deepseek/deepseek-chat-v3-0324:free",
+            model="openrouter/free",   #deepseek/deepseek-chat-v3-0324:free is not a free model now
             messages=[
                 {
                     "role":"user",
